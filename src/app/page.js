@@ -1,9 +1,12 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>
-      
+    <main className="">
+      <img className="w-screen h-screen object-cover object-end"
+      src="/BI2A5681.jpg"
+      alt="Joss"
+       />
     </main>
-  )
+  );
 }
