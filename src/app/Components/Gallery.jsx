@@ -19,7 +19,7 @@ export default function SimpleGallery(props) {
   }, []);
 
   return (
-    <div className="grid lg:grid-cols-6 gap-4 mx-10" id={props.galleryID}>
+    <div className="grid lg:grid-cols-6 gap-4 lg:mx-6" id={props.galleryID}>
       {props.images.map((image, index) => (
         <a
           href={image.largeURL}
