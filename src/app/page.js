@@ -3,149 +3,68 @@ import Gallery from "./Components/Gallery";
 const GalleryImages = [
   {
     largeURL:
-      "/image (1).jpg",
+      "/image (52).jpg",
     thumbnailURL:
-      "/image (1).jpg",
+      "/image (52).jpg",
     width: 2500,
     height: 3750,
   },
   {
     largeURL:
-      "/image (2).jpg",
+      "/image (34).jpg",
     thumbnailURL:
-      "/image (2).jpg",
+      "/image (34).jpg",
     width: 2500,
     height: 3750,
   },
   {
     largeURL:
-      "/image (3).jpg",
+      "/image (215).jpg",
     thumbnailURL:
-      "/image (3).jpg",
+      "/image (215).jpg",
+    width: 3750,
+    height: 2500,
+  },
+  {
+    largeURL:
+      "/image 396).jpg",
+    thumbnailURL:
+      "/image (396).jpg",
     width: 2500,
     height: 3750,
   },
   {
     largeURL:
-      "/image (4).jpg",
+      "/image (242).jpg",
     thumbnailURL:
-      "/image (4).jpg",
+      "/image (242).jpg",
     width: 2500,
     height: 3750,
   },
   {
     largeURL:
-      "/image (5).jpg",
+      "/image (189).jpg",
     thumbnailURL:
-      "/image (5).jpg",
+      "/image (189).jpg",
     width: 2500,
     height: 3750,
   },
   {
     largeURL:
-      "/image (6).jpg",
+      "/image (101).jpg",
     thumbnailURL:
-      "/image (6).jpg",
+      "/image (101).jpg",
     width: 2500,
     height: 3750,
   },
   {
     largeURL:
-      "/image (7).jpg",
+      "/image (157).jpg",
     thumbnailURL:
-      "/image (7).jpg",
+      "/image (157).jpg",
     width: 2500,
     height: 3750,
-  },
-  {
-    largeURL:
-      "/image (8).jpg",
-    thumbnailURL:
-      "/image (8).jpg",
-    width: 2500,
-    height: 3750,
-  },
-  {
-    largeURL:
-      "/image (9).jpg",
-    thumbnailURL:
-      "/image (9).jpg",
-    width: 2500,
-    height: 3750,
-  },
-  {
-    largeURL:
-      "/image (10).jpg",
-    thumbnailURL:
-      "/image (10).jpg",
-    width: 2500,
-    height: 3750,
-  },
-  {
-    largeURL:
-      "/image (11).jpg",
-    thumbnailURL:
-      "/image (11).jpg",
-    width: 2500,
-    height: 3750,
-  },
-  {
-    largeURL:
-      "/image (12).jpg",
-    thumbnailURL:
-      "/image (12).jpg",
-    width: 2500,
-    height: 3750,
-  },
-  {
-    largeURL:
-      "/image (13).jpg",
-    thumbnailURL:
-      "/image (13).jpg",
-    width: 2500,
-    height: 3750,
-  },
-  {
-    largeURL:
-      "/image (14).jpg",
-    thumbnailURL:
-      "/image (14).jpg",
-    width: 2500,
-    height: 3750,
-  },
-  {
-    largeURL:
-      "/image (15).jpg",
-    thumbnailURL:
-      "/image (15).jpg",
-    width: 2500,
-    height: 3750,
-  },
-  {
-    largeURL:
-      "/image (16).jpg",
-    thumbnailURL:
-      "/image (16).jpg",
-    width: 2500,
-    height: 3750,
-  },
-  {
-    largeURL:
-      "/image (17).jpg",
-    thumbnailURL:
-      "/image (17).jpg",
-    width: 2500,
-    height: 3750,
-  },
-  {
-    largeURL:
-      "/image (18).jpg",
-    thumbnailURL:
-      "/image (18).jpg",
-    width: 2500,
-    height: 3750,
-  },
-  
+  }
 ];
 
 export default function Home() {
