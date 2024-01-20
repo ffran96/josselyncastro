@@ -27,7 +27,7 @@ const GalleryImages = [
   },
   {
     largeURL:
-      "/image 396).jpg",
+      "/image (396).jpg",
     thumbnailURL:
       "/image (396).jpg",
     width: 2500,
