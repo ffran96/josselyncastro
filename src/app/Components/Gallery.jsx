@@ -34,6 +34,7 @@ export default function SimpleGallery(props) {
           rel="noreferrer"
         >
           <img
+            loading="lazy"
             className="blur-xl absolute inset-0 transition group-hover:scale-105 group-hover:contrast-125 -z-10"
             src={image.thumbnailURL}
             alt=""
