@@ -19,9 +19,9 @@ export default function Header() {
       <nav>
         <ul className="fixed w-full h-dvh inset-0 text-2xl flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-300 target:translate-y-0 md:static md:h-[initial] md:bg-[initial] md:text-xl md:flex-row md:translate-y-[initial]">
           {Enlaces.map((item) => (
-            <Link key={item.id} href={item.link}>
-              <li>{item.name}</li>
-            </Link>
+            <li key={item.id}>
+              <Link href={item.link}>{item.name}</Link>
+            </li>
           ))}
         </ul>
       </nav>
