@@ -1,6 +1,10 @@
+"use client";
 import React from "react";
 import Logo from "./Logo";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 const Enlaces = [
   { id: "0", name: "Conóceme", link: "#conoceme" },
@@ -11,8 +15,9 @@ const Enlaces = [
 ];
 
 export default function Header() {
+  const [HandleClick, setHandleClick] = useState(false);
   return (
-    <header className="flex items-center justify-around fixed top-0 w-full px-6 py-4 z-50 bg-white/5 backdrop-blur-lg">
+    <header className="flex items-center justify-between fixed top-0 w-full px-6 py-4 z-50 bg-white/5 backdrop-blur-lg">
       <Link href="/">
         <Logo />
       </Link>
@@ -24,6 +29,13 @@ export default function Header() {
             </li>
           ))}
         </ul>
+        <div
+          onClick={() => setHandleClick(!HandleClick)}
+          className="mobile-buttom-menu"
+          style={{ fontSize: "28px", color: "white" }}
+        >
+          <FontAwesomeIcon className="sm:hidden " icon={HandleClick ? faXmark : faBars} />
+        </div>
       </nav>
     </header>
   );
