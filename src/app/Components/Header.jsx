@@ -16,13 +16,18 @@ const Enlaces = [
 
 export default function Header() {
   const [HandleClick, setHandleClick] = useState(false);
+  const [HiddeDropdown, setHiddeDropdown] = useState(false);
   return (
     <>
       {HandleClick && (
         <div className="flex fixed justify-center py-4 z-50 mt-16 w-full  bg-black/90 backdrop-blur-lg transition-all">
           <ul className="space-y-6">
             {Enlaces.map((item) => (
-              <li className="text-slate-100" key={item.id}>
+              <li
+                onClick={() => setHandleClick(!HandleClick)}
+                className="text-slate-100"
+                key={item.id}
+              >
                 <Link href={item.link}>{item.name}</Link>
               </li>
             ))}
