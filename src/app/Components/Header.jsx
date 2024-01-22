@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <>
       {HandleClick && (
-        <div className="flex fixed justify-center py-4 z-50 mt-16 w-full bg-slate-950 transition-all">
+        <div className="flex fixed justify-center py-4 z-50 mt-16 w-full  bg-black/90 backdrop-blur-lg transition-all">
           <ul className="space-y-6">
             {Enlaces.map((item) => (
               <li className="text-slate-100" key={item.id}>
