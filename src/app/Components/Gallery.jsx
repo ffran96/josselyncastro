@@ -19,7 +19,7 @@ export default function SimpleGallery(props) {
   }, []);
 
   return (
-    <div
+    <section
       className="grid lg:grid-cols-4 md:grid-cols-3  grid-cols-2 gap-2 mx-3  lg:max-w-7xl sm:m-auto"
       id={props.galleryID}
     >
@@ -42,6 +42,6 @@ export default function SimpleGallery(props) {
           <img loading="lazy" src={image.thumbnailURL} alt="" />
         </a>
       ))}
-    </div>
+    </section>
   );
 }
