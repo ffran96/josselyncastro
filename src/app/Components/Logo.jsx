@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
 
 export default function Logo() {
   return (
-    <span className='text-2xl text-slate-100'>Josselyn Castro</span>
-  )
+    <div className="flex flex-row gap-1 text-slate-100">
+      <span className="text-2xl">Josselyn</span>
+      <span className="text-2xl">Castro</span>
+    </div>
+  );
 }
