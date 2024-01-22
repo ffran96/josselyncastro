@@ -17,7 +17,7 @@ const Enlaces = [
 export default function Header() {
   const [HandleClick, setHandleClick] = useState(false);
   return (
-    <header className="flex items-center justify-between fixed top-0 w-full px-6 py-4 z-50 bg-white/5 backdrop-blur-lg">
+    <header className="flex items-center justify-between fixed top-0 w-full px-6 md:px-24 py-4 z-50 bg-white/5 backdrop-blur-lg">
       <Link href="/">
         <Logo />
       </Link>
@@ -34,7 +34,7 @@ export default function Header() {
           className="mobile-buttom-menu"
           style={{ fontSize: "28px", color: "white" }}
         >
-          <FontAwesomeIcon className="sm:hidden " icon={HandleClick ? faXmark : faBars} />
+          <FontAwesomeIcon className="md:hidden " icon={HandleClick ? faXmark : faBars} />
         </div>
       </nav>
     </header>
