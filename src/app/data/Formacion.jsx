@@ -18,16 +18,28 @@ const Formacion = [
     Fecha: "Mayo de 2023",
   },
   {
+    id: "5",
+    Titulo: "Method Acting: Inside and Out.",
+    Lugar: "Por Brian Rhinehart (Actors Studio. NY)",
+    Fecha: "Marzo de 2022",
+  },
+  {
     id: "4",
     Titulo: "Grado en Interpretación textual.",
     Lugar: "Escuela Superior de Arte Dramático (ESADV)",
     Fecha: "2018 - 2022",
   },
   {
-    id: "5",
+    id: "6",
     Titulo: "Taller de voz (Método Linklater).",
     Lugar: "Por Prado Pinilla",
     Fecha: "Junio de 2019",
+  },
+  {
+    id: "7",
+    Titulo: "Clases de canto y técnica vocal.",
+    Lugar: "Con María José Peris",
+    Fecha: "Junio de 2018",
   },
   
 ];
