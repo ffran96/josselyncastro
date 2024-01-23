@@ -13,7 +13,7 @@ export default function Home() {
       <Hero />
       <Conoceme />
       <CV />
-      <Gallery galleryID="book" images={GalleryImages} />
+      <Gallery galleryID="gallery" images={GalleryImages} />
       <VBook />
       <Contacto />
     </main>
