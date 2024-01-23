@@ -6,7 +6,7 @@ export default function Conoceme() {
       id={"conoceme"}
       className="flex flex-col lg:flex-row items-center justify-between lg:max-w-7xl mx-auto"
     >
-      <div className="pt-32 lg:max-w-xl [&>p]:mb-4 [&>p]:leading-7	 [&>p]:text-lg [&>p]:text-pretty">
+      <div className="px-3 lg:px-0 pt-32 lg:max-w-xl [&>p]:mb-4 [&>p]:leading-7	 [&>p]:text-lg [&>p]:text-pretty">
         <h2 className="text-3xl font-semibold mb-3">Mi historia</h2>
         <p>
           En la adolescencia, mis aspiraciones evolucionaron. Al concluir la
@@ -46,12 +46,12 @@ export default function Conoceme() {
       <div className="">
         <img
           loading="lazy"
-          className="size-[550px] object-cover rounded-full blur-lg absolute -z-10 "
+          className="size-[350px] lg:size-[550px] object-cover rounded-full blur-lg absolute -z-10 "
           src="./Joss-coceme.jpg"
         />
         <img
           loading="lazy"
-          className="size-[550px] object-cover rounded-full"
+          className="size-[350px] lg:size-[550px] object-cover rounded-full"
           src="./Joss-coceme.jpg"
         />
       </div>
