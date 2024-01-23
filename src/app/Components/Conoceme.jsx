@@ -10,7 +10,7 @@ export default function Conoceme() {
         <h2 className="text-3xl font-semibold mb-3">Mi historia</h2>
         <p>
           En la adolescencia, mis aspiraciones evolucionaron. Al concluir la
-          educación secundaria, decidí optar por una carrera "realista": la
+          educación secundaria, decidí optar por una carrera &#34;realista&#34;: la
           abogacía. No obstante, a los 12 años, me recuerdo buscando escuelas de
           interpretación por internet, mi pasión por el arte dramático seguía
           estando ahí. A los 18 años, decidí independizarme y trabajar para
