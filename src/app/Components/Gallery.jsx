@@ -27,7 +27,7 @@ export default function SimpleGallery(props) {
       >
         {props.images.map((image, index) => (
           <a
-            className="group hover:scale-105  transition-all relative"
+            className="group hover:z-10 hover:scale-105  transition-all relative"
             href={image.largeURL}
             data-pswp-width={image.width}
             data-pswp-height={image.height}
