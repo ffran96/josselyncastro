@@ -29,6 +29,7 @@ const Formacion = [
     Lugar: "Por Prado Pinilla",
     Fecha: "Junio de 2019",
   },
+  
 ];
 
 export default Formacion;
