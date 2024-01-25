@@ -25,7 +25,7 @@ export default function LiCV({ Titulo, Lugar, Fecha, Descripcion }) {
           <span className="italic text-base">{Lugar}</span>
           <span className="text-sm">{Fecha}</span>
           {HandleClick && (
-            <ul>
+            <ul className="mt-2">
               <li>{Descripcion}</li>
             </ul>
           )}

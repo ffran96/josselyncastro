@@ -17,7 +17,7 @@ const Experiencia = [
     Lugar: "Director: Tomás Verdú",
     Fecha: "Mayo de 2023",
     Info: {
-      Descripcion: "a",
+      Descripcion: "",
       Participantes: "",
       Teatro: "",
       Ciudad: "",
@@ -29,7 +29,7 @@ const Experiencia = [
     Lugar: "Director: Miguel Ángel Romo",
     Fecha: "Enero de 2023",
     Info: {
-      Descripcion: "z",
+      Descripcion: "",
       Participantes: "",
       Teatro: "",
       Ciudad: "",
@@ -41,7 +41,7 @@ const Experiencia = [
     Lugar: "Directora: Pilar Silla",
     Fecha: "Mayo de 2022",
     Info: {
-      Descripcion: "u",
+      Descripcion: "",
       Participantes: "",
       Teatro: "",
       Ciudad: "",
@@ -53,7 +53,7 @@ const Experiencia = [
     Lugar: "Director: Aurelio Delgado",
     Fecha: "Enero de 2022",
     Info: {
-      Descripcion: "a",
+      Descripcion: "",
       Participantes: "",
       Teatro: "",
       Ciudad: "",
