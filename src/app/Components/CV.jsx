@@ -17,6 +17,7 @@ export default function CV() {
                 Titulo={i.Titulo}
                 Lugar={i.Lugar}
                 Fecha={i.Fecha}
+                Descripcion={i.Info.Descripcion}
               />
             ))}
           </ul>
