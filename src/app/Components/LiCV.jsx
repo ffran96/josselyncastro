@@ -12,17 +12,17 @@ export default function LiCV({ Titulo, Lugar, Fecha, Descripcion }) {
 
   return (
     <li
-      className="lg:w-[450px] lg:hover:bg-slate-400/20 rounded-lg p-2 transition-all ease-in-out cursor-pointer"
+      className=" lg:hover:bg-slate-400/20 rounded-lg p-2 transition-all ease-in-out cursor-pointer"
       onClick={() => setHandleClick(!HandleClick)}
     >
-      <div className="flex items-center  gap-4">
+      <div className="flex items-center justify-start gap-4">
         <span className="size-4 relative">
           <FontAwesomeIcon
             className="size-4 absolute inset-0 m-auto text-[rgb(var(--foreground-rgb)]"
             icon={!HandleClick ? faChevronRight : faChevronDown}
           />
         </span>
-        <div className="flex flex-col">
+        <div className="flex flex-col lg:w-[400px]">
           <span className="text-xl font-medium">{Titulo}</span>
           <span className="italic text-base">{Lugar}</span>
           <span className="text-sm">{Fecha}</span>
