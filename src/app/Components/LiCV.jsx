@@ -18,7 +18,7 @@ export default function LiCV({ Titulo, Lugar, Fecha, Descripcion }) {
       <div className="flex items-center  gap-4">
         <span className="size-4 relative">
           <FontAwesomeIcon
-            className="size-4 absolute inset-0 m-auto text-slate-900"
+            className="size-4 absolute inset-0 m-auto text-[rgb(var(--foreground-rgb)]"
             icon={!HandleClick ? faChevronRight : faChevronDown}
           />
         </span>
