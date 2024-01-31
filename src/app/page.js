@@ -1,7 +1,6 @@
 import CV from "./Components/CV";
 import Conoceme from "./Components/Conoceme";
 import Contacto from "./Components/Contacto";
-import Footer from "./Components/Footer";
 import Gallery from "./Components/Gallery";
 import Hero from "./Components/Hero";
 import VBook from "./Components/VBook";
