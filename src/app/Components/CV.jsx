@@ -11,13 +11,13 @@ export default function CV() {
         <div className="">
           <h3 className="text-2xl font-semibold mb-6">Experiencia</h3>
           <ul className="[&>li]:mb-3">
-          {Experiencia.map((i) => (
+            {Experiencia.map(({ id, Titulo, Lugar, Fecha, Info }) => (
               <LiCV
-                key={i.id}
-                Titulo={i.Titulo}
-                Lugar={i.Lugar}
-                Fecha={i.Fecha}
-                Descripcion={i.Info.Descripcion}
+                key={id}
+                Titulo={Titulo}
+                Lugar={Lugar}
+                Fecha={Fecha}
+                Descripcion={Info.Descripcion}
               />
             ))}
           </ul>
@@ -25,12 +25,13 @@ export default function CV() {
         <div className="">
           <h3 className="text-2xl font-semibold mb-6">Formación</h3>
           <ul className="[&>li]:mb-3">
-            {Formacion.map((i) => (
+            {Formacion.map(({ id, Titulo, Lugar, Fecha, Info }) => (
               <LiCV
-                key={i.id}
-                Titulo={i.Titulo}
-                Lugar={i.Lugar}
-                Fecha={i.Fecha}
+                key={id}
+                Titulo={Titulo}
+                Lugar={Lugar}
+                Fecha={Fecha}
+                Descripcion={Info.Descripcion}
               />
             ))}
           </ul>
