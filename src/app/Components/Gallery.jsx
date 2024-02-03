@@ -22,7 +22,7 @@ export default function SimpleGallery(props) {
     <section id="book" className="lg:max-w-7xl mx-auto">
       <h2 className=" pt-32 pb-8 text-3xl font-semibold mb-2 px-3 lg:px-0">Book</h2>
       <div
-        className="grid lg:grid-cols-4 md:grid-cols-3  grid-cols-2 gap-2 mx-3  lg:max-w-7xl sm:m-auto"
+        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2"
         id={props.galleryID}
       >
         {props.images.map((image, index) => (
