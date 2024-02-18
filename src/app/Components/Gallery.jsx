@@ -38,17 +38,13 @@ export default function SimpleGallery(props) {
             target="_blank"
             rel="noreferrer"
           >
-            <Image
+            <img
               loading="lazy"
               className="blur-xl absolute inset-0 transition group-hover:scale-105 group-hover:contrast-125 -z-10"
               src={image.thumbnailURL}
               alt=""
-              width={500}
-              height={100}
             />
-            <Image
-              width={450}
-              height={100}
+            <img
               loading="lazy"
               src={image.thumbnailURL}
               alt=""
