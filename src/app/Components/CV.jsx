@@ -5,7 +5,10 @@ import Experiencia from "../data/Experiencia";
 
 export default function CV() {
   return (
-    <section id={"cv"} className="lg:max-w-7xl mx-auto px-3 lg:px-0">
+    <section
+      id="cv"
+      className="lg:max-w-7xl mx-auto px-3 lg:px-0  h-[1000px] overflow-hidden"
+    >
       <h2 className="pt-32 mb-8 text-3xl font-semibold ">Curriculum</h2>
       <div className="flex justify-between flex-col gap-8 lg:flex-row ">
         <div className="">
