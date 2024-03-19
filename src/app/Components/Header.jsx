@@ -12,7 +12,7 @@ export default function Header() {
   const [HandleClick, setHandleClick] = useState(false);
   return (
     <>
-      <header className="flex items-center justify-between fixed top-0 w-full px-6 md:px-24 py-4 z-50 bg-black/90 backdrop-blur-lg">
+      <header className="flex items-center justify-between fixed top-0 w-full px-6 md:px-24 z-50 bg-black/90 backdrop-blur-lg">
         <Link onClick={() => setHandleClick(false)} href="/">
           <Logo />
         </Link>
@@ -26,7 +26,7 @@ export default function Header() {
               ))}
             </ul>
           )}
-          <div onClick={() => setHandleClick(!HandleClick)}>
+          <div className="p-4" onClick={() => setHandleClick(!HandleClick)}>
             <FontAwesomeIcon
               className="md:hidden text-2xl text-slate-100 items-center"
               icon={HandleClick ? faXmark : faBars}
