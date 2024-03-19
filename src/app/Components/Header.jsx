@@ -12,7 +12,7 @@ export default function Header() {
   const [HandleClick, setHandleClick] = useState(false);
   return (
     <>
-      <header className="flex items-center justify-between fixed top-0 w-full px-6 md:px-24 z-50 bg-black/90 backdrop-blur-lg">
+      <header className="flex items-center justify-between fixed top-0 w-full h-[67px] px-6 md:px-24 z-50 bg-black/90 backdrop-blur-lg">
         <Link onClick={() => setHandleClick(false)} href="/">
           <Logo />
         </Link>
@@ -20,15 +20,15 @@ export default function Header() {
           {!HandleClick && (
             <ul className="fixed w-full h-dvh inset-0 text-2xl flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-300 target:translate-y-0 md:static md:h-[initial] md:bg-[initial] md:text-xl md:flex-row md:translate-y-[initial]">
               {Enlaces.map(({ id, link, name }) => (
-                <li className="text-slate-100" key={id}>
-                  <Link href={link}>{name}</Link>
-                </li>
+                <Link key={id} href={link}>
+                  <li className="text-slate-100 py-4">{name}</li>
+                </Link>
               ))}
             </ul>
           )}
-          <div className="p-5" onClick={() => setHandleClick(!HandleClick)}>
+          <div className="" onClick={() => setHandleClick(!HandleClick)}>
             <FontAwesomeIcon
-              className="md:hidden text-2xl text-slate-100 items-center"
+              className="p-5 md:hidden text-2xl text-slate-100 items-center"
               icon={HandleClick ? faXmark : faBars}
             />
           </div>
