@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 import PhotoSwipeLightbox from "photoswipe/lightbox";
 import "photoswipe/style.css";
-import Image from "next/image";
 
 export default function SimpleGallery(props) {
   useEffect(() => {

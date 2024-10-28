@@ -2,22 +2,7 @@
 import React from "react";
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
-
-const Videos = [
-  {
-    id: "yVy_nbqCeG4",
-    title: "LA DIOSA 1958 (ESCENA FINAL) - POR JOSSELYN CASTRO",
-  },
-  {
-    id: "yVy_nbqCeG4",
-    title: "LA DIOSA 1958 (ESCENA FINAL) - POR JOSSELYN CASTRO",
-  },
-  {
-    id: "yVy_nbqCeG4",
-    title: "LA DIOSA 1958 (ESCENA FINAL) - POR JOSSELYN CASTRO",
-  },
-  
-];
+import Videos from "../data/Videobook";
 
 export default function VBook() {
   return (
@@ -28,11 +13,11 @@ export default function VBook() {
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 col">
-          {Videos.map((i, index) => (
+          {Videos.map(({id, title, index}) => (
             <LiteYouTubeEmbed
               key={index}
-              id={i.id}
-              title={i.title}
+              id={id}
+              title={title}
               poster="maxresdefault"
             />
           ))}

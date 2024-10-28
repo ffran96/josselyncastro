@@ -12,7 +12,7 @@ export default function Header() {
   const [HandleClick, setHandleClick] = useState(false);
   return (
     <>
-      <header className="flex items-center justify-between fixed top-0 w-full h-[67px] px-6 md:px-24 z-50 bg-black/90 backdrop-blur-lg">
+      <header className="flex items-center justify-between fixed top-0 w-full h-[67px] px-6 md:px-24 z-50 backdrop-blur-lg">
         <Link onClick={() => setHandleClick(false)} href="/">
           <Logo />
         </Link>
