@@ -9,7 +9,7 @@ export default function Dropdown({ HandleClick, Enlaces, setHandleClick }) {
         <motion.div
           initial={{ y: -313, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          className="flex fixed left-0 top-16  justify-center py-4 z-40  w-full  bg-black/90 backdrop-blur-lg"
+          className="flex fixed left-0 top-16  justify-center py-4 z-40  w-full backdrop-blur-lg"
         >
           <ul className="space-y-6">
             {Enlaces.map((item) => (

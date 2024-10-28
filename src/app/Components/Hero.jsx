@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section id={"Hero"} className="select-none">
       <img
-        className=" w-screen h-screen object-cover object-top"
+        className=" w-screen h-screen object-cover object-center"
         src="/joss-portada.webp"
         alt="Joss"
       />
