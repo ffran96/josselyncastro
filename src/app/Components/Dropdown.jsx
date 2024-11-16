@@ -1,19 +1,16 @@
 import Link from "next/link";
 import React from "react";
-import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function Dropdown({ HandleClick, Enlaces, setHandleClick }) {
   return (
     <>
       {HandleClick && (
-        <motion.div
-          initial={{ y: -313, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          className="flex fixed left-0 top-16  justify-center py-4 z-40  w-full backdrop-blur-lg"
-        >
-          <ul className="space-y-6">
+        <div className="flex fixed left-0 justify-center items-center h-full z-40 w-full backdrop-blur-3xl">
+          <ul className="space-y-16">
             {Enlaces.map((item) => (
-              <li className="text-slate-100" key={item.id}>
+              <li className="text-slate-100 text-4xl" key={item.id}>
                 <Link
                   onClick={() => setHandleClick(!HandleClick)}
                   href={item.link}
@@ -23,7 +20,12 @@ export default function Dropdown({ HandleClick, Enlaces, setHandleClick }) {
               </li>
             ))}
           </ul>
-        </motion.div>
+          <FontAwesomeIcon
+            onClick={() => setHandleClick(!HandleClick)}
+            className=" absolute right-6 top-0 p-5 text-2xl text-slate-100 items-center"
+            icon={faXmark}
+          />
+        </div>
       )}
     </>
   );

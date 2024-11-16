@@ -12,6 +12,7 @@ export default function Header() {
   const [HandleClick, setHandleClick] = useState(false);
   return (
     <>
+    {!HandleClick && (
       <header className="flex items-center justify-between fixed top-0 w-full h-[67px] px-6 md:px-24 z-50 backdrop-blur-lg">
         <Link onClick={() => setHandleClick(false)} href="/">
           <Logo />
@@ -34,6 +35,11 @@ export default function Header() {
           </div>
         </nav>
       </header>
+    )
+
+
+    }
+      
       <Dropdown
         Enlaces={Enlaces}
         HandleClick={HandleClick}
