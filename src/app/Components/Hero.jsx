@@ -30,10 +30,10 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <FontAwesomeIcon
+{/*       <FontAwesomeIcon
         icon={faChevronDown}
         className="absolute text-[32px] bottom-1 left-[50%] opacity-30 transform -translate-x-2/4 -translate-y-2/4"
-      />
+      /> */}
     </section>
   );
 }
