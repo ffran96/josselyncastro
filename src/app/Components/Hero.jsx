@@ -11,7 +11,7 @@ export default function Hero() {
         src="/joss-portada.webp"
         alt="Joss"
       />
-      <div className="flex flex-col items-center gap-3 absolute bottom-2 left-[50%] transform -translate-x-2/4 -translate-y-2/4">
+      <div className="flex flex-col items-center gap-3 absolute -bottom-2 md:bottom-2 left-[50%] transform -translate-x-2/4 -translate-y-2/4">
         <a href="mailto:josselyncastroactriz@gmail.com">
           <p className="text-white font-thin text-lg md:text-2xl rounded-full backdrop-blur-sm px-6 py-2 cursor-pointer">
             josselyncastroactriz@gmail.com
@@ -23,13 +23,13 @@ export default function Hero() {
             target="_blank"
           >
             <FontAwesomeIcon
-              className="text-3xl md:text-4xl cursor-pointer hover:text-[#c4302b]"
+              className="text-4xl cursor-pointer hover:text-[#c4302b]"
               icon={faYoutube}
             />
           </a>
           <a href="https://www.instagram.com/josselyncg/" target="_blank">
             <FontAwesomeIcon
-              className="text-3xl md:text-4xl cursor-pointer hover:bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] rounded-lg"
+              className="text-4xl cursor-pointer hover:bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] rounded-lg"
               icon={faInstagram}
             />
           </a>
