@@ -23,13 +23,13 @@ export default function Hero() {
             target="_blank"
           >
             <FontAwesomeIcon
-              className="text-4xl cursor-pointer hover:text-[#c4302b]"
+              className="text-white text-4xl cursor-pointer hover:text-[#c4302b]"
               icon={faYoutube}
             />
           </a>
           <a href="https://www.instagram.com/josselyncg/" target="_blank">
             <FontAwesomeIcon
-              className="text-4xl cursor-pointer hover:bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] rounded-lg"
+              className="text-white text-4xl cursor-pointer hover:bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] rounded-lg"
               icon={faInstagram}
             />
           </a>
