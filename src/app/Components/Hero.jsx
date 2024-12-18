@@ -41,7 +41,7 @@ export default function Hero() {
         icon={faChevronDown}
         className="absolute text-[32px] bottom-1 left-[50%] opacity-30 transform -translate-x-2/4 -translate-y-2/4"
       /> */}
-      <div className="absolute bottom-0 w-full h-[20%] bg-gradient-to-t from-[#000000] from-0% via-[#000000ad] via-30% to-[#00000000] to-100%" />
+      <div className="absolute bottom-0 w-full h-[100%] bg-gradient-to-t from-[#000000] from-0% via-[#00000028] via-30% to-[#00000000] to-100%" />
     </section>
   );
 }
