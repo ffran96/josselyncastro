@@ -9,10 +9,18 @@ import GalleryImages from "./data/images";
 export default function Home() {
   return (
     <main className="relative">
-      <Hero />
+      <Hero
+        wallpaper="/joss-portada.webp"
+        alt="Josselyn Castro Garces"
+        email="josselyncastroactriz@gmail.com"
+        youtube="@josselyncastrogarces2094"
+        instagram="josselyncg"
+      />
       <Conoceme />
       <CV />
-      <Gallery galleryID="gallery" images={GalleryImages} />
+      <Gallery 
+        galleryID="gallery" 
+        images={GalleryImages} />
       <VBook />
       <Contacto />
     </main>
