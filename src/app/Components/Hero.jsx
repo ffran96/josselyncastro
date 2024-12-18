@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faCalendarCheck, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faComputerMouse } from "@fortawesome/free-solid-svg-icons";
 /* import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
  */
 export default function Hero() {
@@ -12,10 +12,10 @@ export default function Hero() {
         src="/joss-portada.webp"
         alt="Joss"
       />
-      <div className="flex flex-col items-center gap-3 absolute -bottom-2 md:bottom-2 left-[50%] transform -translate-x-2/4 -translate-y-2/4 z-10">
+      <div className="flex flex-col items-center justify-center gap-3 absolute -bottom-2 md:bottom-2 left-[50%] transform -translate-x-2/4 -translate-y-2/4 z-10">
         <a href="mailto:josselyncastroactriz@gmail.com">
           <p className="group flex justify-center items-center gap-4 text-white font-thin text-lg md:text-2xl rounded-full backdrop-blur-sm px-6 py-2 cursor-pointer">
-            <FontAwesomeIcon className="text-[20px] group-hover:text-[#cf6e1fe1] transition-colors delay-100" icon={faEnvelope} />
+            <FontAwesomeIcon className="text-[20px] transition-colors delay-100" icon={faComputerMouse} />
             <span>josselyncastroactriz@gmail.com</span>
           </p>
         </a>
@@ -41,7 +41,7 @@ export default function Hero() {
         icon={faChevronDown}
         className="absolute text-[32px] bottom-1 left-[50%] opacity-30 transform -translate-x-2/4 -translate-y-2/4"
       /> */}
-      <div className="absolute bottom-0 w-full h-[20%] bg-gradient-to-t from-[#000000] from-20% via-[#000000ce] via-30% to-[#00000000] to-100%" />
+      <div className="absolute bottom-0 w-full h-[20%] bg-gradient-to-t from-[#000000] from-0% via-[#000000ad] via-30% to-[#00000000] to-100%" />
     </section>
   );
 }
