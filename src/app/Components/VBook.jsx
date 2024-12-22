@@ -13,9 +13,9 @@ export default function VBook() {
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 col">
-          {Videos.map(({id, title, index}) => (
+          {Videos.map(({id, title}) => (
             <LiteYouTubeEmbed
-              key={index}
+              key={title}
               id={id}
               title={title}
               poster="maxresdefault"
