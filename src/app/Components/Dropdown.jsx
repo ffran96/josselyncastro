@@ -28,39 +28,35 @@ export default function Dropdown({ HandleClick, Enlaces, setHandleClick }) {
               </li>
             ))}
           </ul>
+
           <div
             className={`${
-              ShowRRSS && "right-16"
-            } transition-all absolute top-[40%] right-0`}
+              !ShowRRSS && "-right-16"
+            } transition-all absolute right-0 bg-[#00000099] rounded-tl-2xl rounded-bl-2xl w-16 h-48 pl-4 flex flex-col gap-6  justify-center items-start`}
           >
-            <div className="absolute bg-[#00000099] rounded-tl-2xl rounded-bl-2xl  w-16 py-6 pl-4  flex flex-col gap-6  items-start">
-              <a
-                href={"https://www.instagram.com/" + instagram}
-                target="_blank"
-              >
-                <FontAwesomeIcon
-                  className="text-white text-[34px]"
-                  icon={faInstagram}
-                />
-              </a>
-              <a href={"https://www.youtube.com/" + youtube} target="_blank">
-                <FontAwesomeIcon
-                  className="text-white text-3xl"
-                  icon={faYoutube}
-                />
-              </a>
-              <a onClick={() => window.open(`mailto:${email}`)}>
-                <FontAwesomeIcon
-                  className="text-white text-3xl"
-                  icon={faEnvelope}
-                />
-              </a>
-              <div
-                onClick={() => setShowRRSS(!ShowRRSS)}
-                className="absolute top-[64px] -left-[26px] py-6 px-2 rounded-tl-2xl rounded-bl-2xl bg-[#00000099]"
-              >
-                <FontAwesomeIcon icon={ShowRRSS ? faAngleRight : faAngleLeft} />
-              </div>
+            <a href={"https://www.instagram.com/" + instagram} target="_blank">
+              <FontAwesomeIcon
+                className="text-white text-[34px]"
+                icon={faInstagram}
+              />
+            </a>
+            <a href={"https://www.youtube.com/" + youtube} target="_blank">
+              <FontAwesomeIcon
+                className="text-white text-3xl"
+                icon={faYoutube}
+              />
+            </a>
+            <a onClick={() => window.open(`mailto:${email}`)}>
+              <FontAwesomeIcon
+                className="text-white text-3xl"
+                icon={faEnvelope}
+              />
+            </a>
+            <div
+              onClick={() => setShowRRSS(!ShowRRSS)}
+              className="absolute -left-[26px] py-6 px-2 rounded-tl-2xl rounded-bl-2xl bg-[#00000099]"
+            >
+              <FontAwesomeIcon icon={ShowRRSS ? faAngleRight : faAngleLeft} />
             </div>
           </div>
           <FontAwesomeIcon
