@@ -24,17 +24,17 @@ export default function Dropdown({ HandleClick, Enlaces, setHandleClick }) {
               </li>
             ))}
           </ul>
-          <div className="absolute bottom-8 flex gap-6">
+          <div className="absolute bottom-6 right-6 flex flex-col gap-4 items-center">
+            <a href={"https://www.instagram.com/" + instagram} target="_blank">
+              <FontAwesomeIcon
+                className="text-white text-[34px]"
+                icon={faInstagram}
+              />
+            </a>
             <a href={"https://www.youtube.com/" + youtube} target="_blank">
               <FontAwesomeIcon
                 className="text-white text-3xl"
                 icon={faYoutube}
-              />
-            </a>
-            <a href={"https://www.instagram.com/" + instagram} target="_blank">
-              <FontAwesomeIcon
-                className="text-white text-3xl"
-                icon={faInstagram}
               />
             </a>
             <a onClick={() => window.open(`mailto:${email}`)}>
