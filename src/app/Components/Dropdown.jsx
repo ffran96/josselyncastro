@@ -3,7 +3,6 @@ import Link from "next/link";
 import React, { useState } from "react";
 import {
   faAngleLeft,
-  faAngleRight,
   faEnvelope,
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
