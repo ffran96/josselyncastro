@@ -12,9 +12,6 @@ export default function Home() {
       <Hero
         wallpaper="/joss-portada.webp"
         alt="Josselyn Castro Garces"
-        email="josselyncastroactriz@gmail.com"
-        youtube="@josselyncastrogarces2094"
-        instagram="josselyncg"
       />
       <Conoceme />
       <CV />

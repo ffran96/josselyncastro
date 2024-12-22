@@ -3,8 +3,11 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faComputerMouse } from "@fortawesome/free-solid-svg-icons";
+import RRSS from "../data/RRSS";
 
-export default function Hero({ wallpaper, alt, email, youtube, instagram }) {
+export default function Hero({ wallpaper, alt }) {
+  const { instagram, youtube, email } = RRSS;
+
   return (
     <section id={"Hero"} className="select-none relative">
       <img
