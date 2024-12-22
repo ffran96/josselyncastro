@@ -29,10 +29,16 @@ export default function Dropdown({ HandleClick, Enlaces, setHandleClick }) {
             ))}
           </ul>
 
+          <FontAwesomeIcon
+            onClick={() => setHandleClick(!HandleClick)}
+            className="absolute right-6 top-0 p-5 text-2xl text-slate-100 items-center"
+            icon={faXmark}
+          />
+
           <div
             className={`${
               ShowRRSS ? "right-0" : "-right-16"
-            } transition-all duration-500 ease-in-out absolute bg-[#00000099] rounded-tl-2xl rounded-bl-2xl w-16 h-48 pl-4 flex flex-col gap-6  justify-center items-start`}
+            } transition-all duration-500 ease-in-out absolute top-1/2 transform -translate-y-1/2 bg-[#00000099] rounded-tl-2xl rounded-bl-2xl w-16 h-48 pl-4 flex flex-col gap-6  justify-center items-start`}
           >
             <a href={"https://www.instagram.com/" + instagram} target="_blank">
               <FontAwesomeIcon
@@ -57,16 +63,13 @@ export default function Dropdown({ HandleClick, Enlaces, setHandleClick }) {
               className="absolute -left-[26px] py-6 px-2 rounded-tl-2xl rounded-bl-2xl bg-[#00000099]"
             >
               <FontAwesomeIcon
-                className={`${ShowRRSS && "rotate-180"} transition-all duration-500`}
+                className={`${
+                  ShowRRSS && "rotate-180"
+                } transition-all duration-500`}
                 icon={faAngleLeft}
               />
             </div>
           </div>
-          <FontAwesomeIcon
-            onClick={() => setHandleClick(!HandleClick)}
-            className="absolute right-6 top-0 p-5 text-2xl text-slate-100 items-center"
-            icon={faXmark}
-          />
         </div>
       )}
     </>
