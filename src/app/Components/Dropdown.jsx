@@ -1,7 +1,12 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import { faEnvelope, faXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleLeft,
+  faAngleRight,
+  faEnvelope,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import RRSS from "../data/RRSS";
@@ -9,7 +14,6 @@ import RRSS from "../data/RRSS";
 export default function Dropdown({ HandleClick, Enlaces, setHandleClick }) {
   const { instagram, youtube, email } = RRSS;
   const [ShowRRSS, setShowRRSS] = useState(false);
-
 
   return (
     <>
@@ -24,30 +28,44 @@ export default function Dropdown({ HandleClick, Enlaces, setHandleClick }) {
               </li>
             ))}
           </ul>
-{/*           <div onClick={() => setShowRRSS(!ShowRRSS)} className="absolute left-0 h-[80px] w-8 bg-[#000000]"></div>
- */}          <div className="bg-[#00000099] rounded-tl-2xl rounded-bl-2xl  w-16 py-6 pl-4 absolute bottom-[40%] right-0 flex flex-col gap-6  items-start">
-            <a href={"https://www.instagram.com/" + instagram} target="_blank">
-              <FontAwesomeIcon
-                className="text-white text-[34px]"
-                icon={faInstagram}
-              />
-            </a>
-            <a href={"https://www.youtube.com/" + youtube} target="_blank">
-              <FontAwesomeIcon
-                className="text-white text-3xl"
-                icon={faYoutube}
-              />
-            </a>
-            <a onClick={() => window.open(`mailto:${email}`)}>
-              <FontAwesomeIcon
-                className="text-white text-3xl"
-                icon={faEnvelope}
-              />
-            </a>
+          <div
+            className={`${
+              ShowRRSS && "right-16"
+            } transition-all absolute top-[40%] right-0`}
+          >
+            <div className="absolute bg-[#00000099] rounded-tl-2xl rounded-bl-2xl  w-16 py-6 pl-4  flex flex-col gap-6  items-start">
+              <a
+                href={"https://www.instagram.com/" + instagram}
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  className="text-white text-[34px]"
+                  icon={faInstagram}
+                />
+              </a>
+              <a href={"https://www.youtube.com/" + youtube} target="_blank">
+                <FontAwesomeIcon
+                  className="text-white text-3xl"
+                  icon={faYoutube}
+                />
+              </a>
+              <a onClick={() => window.open(`mailto:${email}`)}>
+                <FontAwesomeIcon
+                  className="text-white text-3xl"
+                  icon={faEnvelope}
+                />
+              </a>
+              <div
+                onClick={() => setShowRRSS(!ShowRRSS)}
+                className="absolute top-[64px] -left-[26px] py-6 px-2 rounded-tl-2xl rounded-bl-2xl bg-[#00000099]"
+              >
+                <FontAwesomeIcon icon={ShowRRSS ? faAngleRight : faAngleLeft} />
+              </div>
+            </div>
           </div>
           <FontAwesomeIcon
             onClick={() => setHandleClick(!HandleClick)}
-            className=" absolute right-6 top-0 p-5 text-2xl text-slate-100 items-center"
+            className="absolute right-6 top-0 p-5 text-2xl text-slate-100 items-center"
             icon={faXmark}
           />
         </div>
