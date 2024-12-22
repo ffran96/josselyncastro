@@ -19,10 +19,10 @@ export default function Header() {
           </Link>
           <nav>
             {!HandleClick && (
-              <ul className="fixed w-full h-dvh inset-0 text-2xl flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-300 target:translate-y-0 md:static md:h-[initial] md:bg-[initial] md:text-xl md:flex-row md:translate-y-[initial]">
+              <ul className="flex">
                 {Enlaces.map(({ id, link, name }) => (
                   <Link key={id} href={link}>
-                    <li className="text-slate-100 py-4">{name}</li>
+                    <li className="text-slate-100 text-2xl px-6 py-4">{name}</li>
                   </Link>
                 ))}
               </ul>
