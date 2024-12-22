@@ -24,7 +24,8 @@ export default function Dropdown({ HandleClick, Enlaces, setHandleClick }) {
               </li>
             ))}
           </ul>
-          <div className="absolute bottom-6 right-6 flex flex-col gap-4 items-center">
+{/*           <div className="absolute right-0 h-[180px] w-8 bg-[#000000]"></div>
+ */}          <div className="bg-[#000000b7] rounded-tl-2xl rounded-bl-2xl  w-16 py-6 pl-4 absolute bottom-[40%] right-0 flex flex-col gap-6  items-start">
             <a href={"https://www.instagram.com/" + instagram} target="_blank">
               <FontAwesomeIcon
                 className="text-white text-[34px]"
