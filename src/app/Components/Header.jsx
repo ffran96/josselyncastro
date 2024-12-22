@@ -13,13 +13,13 @@ export default function Header() {
   return (
     <>
       {!HandleClick && (
-        <header className="flex items-center justify-between fixed top-0 w-full h-[67px] px-6 md:px-24 z-50 backdrop-blur-lg">
+        <header className="flex items-center justify-between xl:justify-evenly fixed px-6 top-0 w-full h-[67px] z-50 backdrop-blur-lg">
           <Link onClick={() => setHandleClick(false)} href="/">
             <Logo />
           </Link>
           <nav>
             {!HandleClick && (
-              <ul className="flex">
+              <ul className="hidden xl:flex">
                 {Enlaces.map(({ id, link, name }) => (
                   <Link key={id} href={link}>
                     <li className="text-slate-100 text-2xl px-6 py-4">{name}</li>
@@ -29,7 +29,7 @@ export default function Header() {
             )}
             <div className="" onClick={() => setHandleClick(!HandleClick)}>
               <FontAwesomeIcon
-                className="p-5 md:hidden text-2xl text-slate-100 items-center"
+                className="xl:hidden text-3xl text-slate-100 items-center"
                 icon={HandleClick ? faXmark : faBars}
               />
             </div>
