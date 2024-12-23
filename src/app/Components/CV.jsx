@@ -5,39 +5,43 @@ import Experiencia from "../data/Experiencia";
 
 export default function CV() {
   return (
-    <section
-      id="cv"
-      className="lg:max-w-7xl mx-auto px-3 lg:px-0"
-    >
-      <h2 className="pt-32 mb-8 text-3xl font-semibold ">Curriculum</h2>
-      <div className="flex justify-between flex-col gap-8 lg:flex-row ">
-        <div className="">
-          <h3 className="text-2xl font-semibold mb-6">Experiencia</h3>
-          <ul className="[&>li]:mb-3">
-            {Experiencia.map(({ id, Titulo, Lugar, Fecha, Info }) => (
-              <LiCV
-                key={id}
-                Titulo={Titulo}
-                Lugar={Lugar}
-                Fecha={Fecha}
-                Descripcion={Info.Descripcion}
-              />
-            ))}
-          </ul>
-        </div>
-        <div className="">
-          <h3 className="text-2xl font-semibold mb-6">Formación</h3>
-          <ul className="[&>li]:mb-3">
-            {Formacion.map(({ id, Titulo, Lugar, Fecha, Info }) => (
-              <LiCV
-                key={id}
-                Titulo={Titulo}
-                Lugar={Lugar}
-                Fecha={Fecha}
-                Descripcion={Info.Descripcion}
-              />
-            ))}
-          </ul>
+    <section className="relative overflow-hidden">
+      <div id="cv" className="lg:max-w-7xl mx-auto px-3 lg:px-0 ">
+        <h2 className="pt-32 mb-8 text-3xl font-semibold ">Curriculum</h2>
+        <div className="flex justify-between flex-col gap-8 lg:flex-row ">
+          <div className="">
+            <img
+              src="/image (157).jpg"
+              className="absolute  blur-[96px] -z-10 rounded-full -right-[20%]  w-[1500px] 72 h-[2000px] "
+            />
+
+            <h3 className="text-2xl font-semibold mb-6">Experiencia</h3>
+            <ul className="[&>li]:mb-3">
+              {Experiencia.map(({ id, Titulo, Lugar, Fecha, Info }) => (
+                <LiCV
+                  key={id}
+                  Titulo={Titulo}
+                  Lugar={Lugar}
+                  Fecha={Fecha}
+                  Descripcion={Info.Descripcion}
+                />
+              ))}
+            </ul>
+          </div>
+          <div className="">
+            <h3 className="text-2xl font-semibold mb-6">Formación</h3>
+            <ul className="[&>li]:mb-3">
+              {Formacion.map(({ id, Titulo, Lugar, Fecha, Info }) => (
+                <LiCV
+                  key={id}
+                  Titulo={Titulo}
+                  Lugar={Lugar}
+                  Fecha={Fecha}
+                  Descripcion={Info.Descripcion}
+                />
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>
