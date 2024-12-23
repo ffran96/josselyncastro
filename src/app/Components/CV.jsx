@@ -11,8 +11,12 @@ export default function CV() {
         <div className="flex justify-between flex-col gap-8 lg:flex-row ">
           <div className="">
             <img
-              src="/image (157).jpg"
+              src="/destello-josselyn.webp"
               className="absolute  blur-[96px] -z-10 rounded-full -right-[20%]  w-[1500px] 72 h-[2000px] "
+            />
+            <img
+              src="/destello-josselyn.webp"
+              className="absolute  blur-[288px] -z-20 rounded-full -right-[20%]  w-[3000px] 72 h-[4000px] "
             />
 
             <h3 className="text-2xl font-semibold mb-6">Experiencia</h3>
@@ -44,6 +48,7 @@ export default function CV() {
           </div>
         </div>
       </div>
+      <div className="absolute -z-10 bottom-0 w-full h-[100%] bg-gradient-to-t from-[#000000] from-0% via-[#00000028] via-30% to-[#00000000] to-100%" />
     </section>
   );
 }
