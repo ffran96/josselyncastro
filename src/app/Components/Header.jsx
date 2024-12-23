@@ -21,9 +21,14 @@ export default function Header() {
             {!HandleClick && (
               <ul className="hidden xl:flex">
                 {Enlaces.map(({ id, link, name }) => (
-                  <Link key={id} href={link}>
-                    <li className="text-slate-100 text-2xl px-6 py-4">{name}</li>
-                  </Link>
+                  <li key={id}>
+                    <Link
+                      className="text-slate-100 text-2xl px-6 py-4"
+                      href={link}
+                    >
+                      {name}
+                    </Link>
+                  </li>
                 ))}
               </ul>
             )}
