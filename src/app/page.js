@@ -17,7 +17,7 @@ export default function Home() {
       <CV />
       <Gallery 
         galleryID="gallery" 
-        images={GalleryImages} />
+        Images={GalleryImages} />
       <VBook />
       <Contacto />
     </main>
