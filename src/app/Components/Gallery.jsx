@@ -29,7 +29,7 @@ export default function SimpleGallery(props) {
       >
         {props.images.map((image, index) => (
           <a
-            className="group hover:z-10 hover:scale-105  transition-all relative"
+            className="group xl:hover:z-10 xl:hover:scale-105  xl:transition-all relative"
             href={image.largeURL}
             data-pswp-width={image.width}
             data-pswp-height={image.height}
@@ -39,7 +39,7 @@ export default function SimpleGallery(props) {
           >
             <img
               loading="lazy"
-              className="blur-xl absolute inset-0 transition group-hover:scale-105 group-hover:contrast-125 -z-10"
+              className="blur-xl absolute inset-0 transition xl:group-hover:scale-105 xl:group-hover:contrast-125 -z-10"
               src={image.thumbnailURL}
               alt=""
             />
