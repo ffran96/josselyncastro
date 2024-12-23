@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
 export default function ContactToggle({instagram, youtube, email}) {
-  const [ShowRRSS, setShowRRSS] = useState(false);
+  const [ShowRRSS, setShowRRSS] = useState(true);
 
   return (
     <div
