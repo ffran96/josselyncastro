@@ -9,15 +9,10 @@ import GalleryImages from "./data/images";
 export default function Home() {
   return (
     <main className="relative">
-      <Hero
-        wallpaper="/joss-portada.webp"
-        alt="Josselyn Castro Garces"
-      />
+      <Hero wallpaper="/joss-portada.webp" alt="Josselyn Castro Garces" />
       <Conoceme />
       <CV />
-      <Gallery 
-        galleryID="gallery" 
-        Images={GalleryImages} />
+      <Gallery galleryID="gallery" Images={GalleryImages} />
       <VBook />
       <Contacto />
     </main>
