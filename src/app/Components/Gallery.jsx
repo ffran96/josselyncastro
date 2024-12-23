@@ -32,29 +32,29 @@ export default function SimpleGallery(props) {
         {Images.map(
           ({ largeURL, width, height, galleryID, thumbnailURL, index }) => (
             <a
-              className="group hover:z-10 hover:scale-105  transition-all relative"
+              key={largeURL}
+              className="group xl:hover:z-10 xl:hover:scale-105  xl:transition-all relative"
               href={largeURL}
               data-pswp-width={width}
               data-pswp-height={height}
-              key={galleryID + "-" + index}
               target="_blank"
               rel="noreferrer"
             >
               <img
+                src={thumbnailURL}
+                width={314}
+                height={471}
+                alt=""
+                loading="lazy"
+              />
+{/*               <img
                 className="blur-xl absolute inset-0 transition group-hover:scale-105 group-hover:contrast-125 -z-10"
                 src={thumbnailURL}
                 width={314}
                 height={471}
                 alt=""
                 loading="lazy"
-              />
-              <img
-                src={thumbnailURL}
-                width={314}
-                height={471}
-                alt=""
-                loading="lazy"
-              />
+              /> */}
             </a>
           )
         )}
