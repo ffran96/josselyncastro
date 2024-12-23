@@ -30,7 +30,7 @@ export default function SimpleGallery(props) {
         id={galleryID}
       >
         {Images.map(
-          ({ largeURL, width, height, galleryID, thumbnailURL, index }) => (
+          ({ largeURL, width, height, thumbnailURL, altThumbnail }) => (
             <a
               key={largeURL}
               className="group xl:hover:z-10 xl:hover:scale-105  xl:transition-all relative"
@@ -44,7 +44,7 @@ export default function SimpleGallery(props) {
                 src={thumbnailURL}
                 width={314}
                 height={471}
-                alt=""
+                alt={altThumbnail}
                 loading="lazy"
               />
               <img
