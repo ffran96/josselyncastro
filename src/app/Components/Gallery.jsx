@@ -47,14 +47,14 @@ export default function SimpleGallery(props) {
                 alt=""
                 loading="lazy"
               />
-{/*               <img
-                className="blur-xl absolute inset-0 transition group-hover:scale-105 group-hover:contrast-125 -z-10"
+              <img
+                className="blur-xl absolute inset-0 transition xl:group-hover:scale-105 xl:group-hover:contrast-125 -z-10"
                 src={thumbnailURL}
                 width={314}
                 height={471}
                 alt=""
                 loading="lazy"
-              /> */}
+              />
             </a>
           )
         )}
