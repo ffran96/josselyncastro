@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import PhotoSwipeLightbox from "photoswipe/lightbox";
 import "photoswipe/style.css";
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
 
 export default function SimpleGallery(props) {
   const { Images, galleryID } = props;
@@ -40,20 +40,20 @@ export default function SimpleGallery(props) {
               target="_blank"
               rel="noreferrer"
             >
-              <Image
+              <img
                 className="blur-xl absolute inset-0 transition group-hover:scale-105 group-hover:contrast-125 -z-10"
                 src={thumbnailURL}
                 width={314}
                 height={471}
                 alt=""
-                priority
+                loading="lazy"
               />
-              <Image
+              <img
                 src={thumbnailURL}
                 width={314}
                 height={471}
                 alt=""
-                priority
+                loading="lazy"
               />
             </a>
           )
