@@ -3,8 +3,11 @@ import Link from "next/link";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ContactToggle from "./ContactToggle";
+import RRSS from "../data/RRSS";
 
 export default function Dropdown({ HandleClick, Enlaces, setHandleClick }) {
+  const { instagram, youtube, email } = RRSS;
+
   return (
     <>
       {HandleClick && (
@@ -24,7 +27,11 @@ export default function Dropdown({ HandleClick, Enlaces, setHandleClick }) {
             className="absolute right-7 top-4 text-3xl text-slate-100 items-center"
             icon={faXmark}
           />
-          <ContactToggle />
+          <ContactToggle
+            instagram={instagram}
+            youtube={youtube}
+            email={email}
+          />
         </div>
       )}
     </>

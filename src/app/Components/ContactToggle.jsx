@@ -2,18 +2,16 @@
 import { faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faAngleLeft, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import RRSS from "../data/RRSS";
 import { useState } from "react";
 
-export default function ContactToggle() {
-  const { instagram, youtube, email } = RRSS;
+export default function ContactToggle({instagram, youtube, email}) {
   const [ShowRRSS, setShowRRSS] = useState(false);
 
   return (
     <div
       className={`${
         ShowRRSS ? "right-0" : "-right-16"
-      } fixed transition-all duration-300 ease-in-out top-1/2 transform -translate-y-1/2 bg-[#00000099] rounded-tl-2xl rounded-bl-2xl w-16 h-48 pl-4 flex flex-col gap-6  justify-center items-start`}
+      } fixed transition-all duration-300 ease-in-out top-1/2 transform -translate-y-1/2 bg-[#00000099] rounded-tl-2xl rounded-bl-2xl w-16 h-48 pl-2 flex flex-col gap-6  justify-center items-center`}
     >
       <a href={"https://www.instagram.com/" + instagram} target="_blank">
         <FontAwesomeIcon
