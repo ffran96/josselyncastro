@@ -46,8 +46,15 @@ export default function SimpleGallery(props) {
                 width={314}
                 height={471}
                 alt=""
+                priority
               />
-              <Image src={thumbnailURL} width={314} height={471} alt="" />
+              <Image
+                src={thumbnailURL}
+                width={314}
+                height={471}
+                alt=""
+                priority
+              />
             </a>
           )
         )}
