@@ -21,7 +21,7 @@ export default function Hero() {
           width: '100%',
           height: '100dvh',
         }}
-        alt={"Josselyn Castro Actriz portada"}
+        alt="Josselyn Castro Actriz portada"
         priority
       />
       <div className="flex flex-col items-center justify-center gap-3 absolute -bottom-2 md:bottom-2 left-[50%] transform -translate-x-2/4 -translate-y-2/4 z-10">
