@@ -3,7 +3,6 @@ import React, { useEffect } from "react";
 import PhotoSwipeLightbox from "photoswipe/lightbox";
 import "photoswipe/style.css";
 import Image from "next/image";
-import Link from "next/link";
 /* eslint-disable @next/next/no-img-element */
 
 export default function SimpleGallery(props) {
@@ -33,7 +32,7 @@ export default function SimpleGallery(props) {
       >
         {Images.map(
           ({ largeURL, width, height, thumbnailURL, altThumbnail }) => (
-            <Link
+            <a
               key={largeURL}
               className="group xl:hover:z-10 xl:hover:scale-105  xl:transition-all relative"
               href={largeURL}
@@ -62,7 +61,7 @@ export default function SimpleGallery(props) {
                 alt={`${altThumbnail} blur`}
                 loading="lazy"
               />
-            </Link>
+            </a>
           )
         )}
       </div>
