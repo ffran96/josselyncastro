@@ -4,16 +4,25 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faComputerMouse } from "@fortawesome/free-solid-svg-icons";
 import RRSS from "../data/RRSS";
+import Image from "next/image";
+import Wallpaper from "../../../public/joss-portada.webp"
 
-export default function Hero({ wallpaper, alt }) {
+export default function Hero() {
   const { instagram, youtube, email } = RRSS;
 
   return (
     <section id={"Hero"} className="select-none relative">
-      <img
+      <Image
+        src={Wallpaper}
         className="w-screen h-dvh object-cover object-center"
-        src={wallpaper}
-        alt={alt}
+        quality={100}
+        sizes="100vw"
+        style={{
+          width: '100%',
+          height: '100dvh',
+        }}
+        alt={"Josselyn Castro Actriz portada"}
+        priority
       />
       <div className="flex flex-col items-center justify-center gap-3 absolute -bottom-2 md:bottom-2 left-[50%] transform -translate-x-2/4 -translate-y-2/4 z-10">
         <p
@@ -42,10 +51,6 @@ export default function Hero({ wallpaper, alt }) {
           </a>
         </div>
       </div>
-      {/*       <FontAwesomeIcon
-        icon={faChevronDown}
-        className="absolute text-[32px] bottom-1 left-[50%] opacity-30 transform -translate-x-2/4 -translate-y-2/4"
-      /> */}
       <div className="absolute bottom-0 w-full h-[100%] bg-gradient-to-t from-[#000000] from-0% via-[#00000028] via-30% to-[#00000000] to-100%" />
     </section>
   );
