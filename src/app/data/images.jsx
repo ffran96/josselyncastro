@@ -7,15 +7,6 @@ import Image6 from "../../../public/josselyn-castro-actriz-gallerytb-6.webp"
 import Image7 from "../../../public/josselyn-castro-actriz-gallerytb-7.webp"
 import Image8 from "../../../public/josselyn-castro-actriz-gallerytb-8.webp"
 
-import BigImage1 from "../../../public/josselyn-castro-actriz-gallery-1.jpg";
-import BigImage2 from "../../../public/josselyn-castro-actriz-gallery-2.jpg";
-import BigImage3 from "../../../public/josselyn-castro-actriz-gallery-3.jpg";
-import BigImage4 from "../../../public/josselyn-castro-actriz-gallery-4.jpg";
-import BigImage5 from "../../../public/josselyn-castro-actriz-gallery-5.jpg";
-import BigImage6 from "../../../public/josselyn-castro-actriz-gallery-6.jpg";
-import BigImage7 from "../../../public/josselyn-castro-actriz-gallery-7.jpg";
-import BigImage8 from "../../../public/josselyn-castro-actriz-gallery-8.jpg";
-
 const GalleryImages = [
   {
     largeURL: "/josselyn-castro-actriz-gallery-1.jpg",
