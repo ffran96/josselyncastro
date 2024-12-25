@@ -5,7 +5,7 @@ import { faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faComputerMouse } from "@fortawesome/free-solid-svg-icons";
 import RRSS from "../data/RRSS";
 import Image from "next/image";
-import Wallpaper from "../../../public/joss-portada.webp"
+import Wallpaper from "../../../public/joss-portada.webp";
 
 export default function Hero() {
   const { instagram, youtube, email } = RRSS;
@@ -18,15 +18,15 @@ export default function Hero() {
         quality={100}
         sizes="100vw"
         style={{
-          width: '100%',
-          height: '100dvh',
+          width: "100%",
+          height: "100dvh",
         }}
         alt="Josselyn Castro Actriz portada"
         priority
       />
       <div className="flex flex-col items-center justify-center gap-3 absolute -bottom-2 md:bottom-2 left-[50%] transform -translate-x-2/4 -translate-y-2/4 z-10">
-        <p
-          onClick={() => window.open(`mailto:${email}`)}
+        <a
+          href={`mailto:${email}`}
           className="group flex justify-center items-center gap-4 text-white font-thin text-lg md:text-2xl rounded-full backdrop-blur-sm px-6 py-2 cursor-pointer"
         >
           <FontAwesomeIcon
@@ -34,7 +34,7 @@ export default function Hero() {
             icon={faComputerMouse}
           />
           <span>{email}</span>
-        </p>
+        </a>
 
         <div className="flex gap-4">
           <a href={"https://www.youtube.com/" + youtube} target="_blank">
