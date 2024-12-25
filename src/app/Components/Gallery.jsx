@@ -3,7 +3,6 @@ import React, { useEffect } from "react";
 import PhotoSwipeLightbox from "photoswipe/lightbox";
 import "photoswipe/style.css";
 import Image from "next/image";
-/* eslint-disable @next/next/no-img-element */
 
 export default function SimpleGallery(props) {
   const { Images, galleryID } = props;
@@ -46,7 +45,7 @@ export default function SimpleGallery(props) {
                 quality={100}
                 style={{
                   width: "314px",
-                  objectFit: "cover"
+                  objectFit: "cover",
                 }}
                 alt={altThumbnail}
                 loading="lazy"
