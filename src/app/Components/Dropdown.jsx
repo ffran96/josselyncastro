@@ -46,7 +46,7 @@ export default function Dropdown({ HandleClick, Enlaces, setHandleClick }) {
                 icon={faYoutube}
               />
             </a>
-            <a onClick={() => window.open(`mailto:${email}`)}>
+            <a href={`mailto:${email}`}>
               <FontAwesomeIcon
                 className="text-white text-3xl"
                 icon={faEnvelope}
