@@ -66,28 +66,6 @@ const GalleryImages = [
   },
 ];
 
-/* const Images = [
-  { Image1, BigImage1 },
-  { Image2, BigImage2 },
-  { Image3, BigImage3 },
-  { Image4, BigImage4 },
-  { Image5, BigImage5 },
-  { Image6, BigImage6 },
-  { Image7, BigImage7 },
-  { Image8, BigImage8 },
-];
-
-let GalleryImages = [];
-Images.map(({ Image, Bigimage }) => {
-  GalleryImages.push({
-    largeURL: Bigimage,
-    altThumbnail: "Josselyn Castro - Actriz",
-    thumbnailURL: Image,
-    width: 2500,
-    height: 3750,
-  });
-}); */
-
 export default GalleryImages;
 
 

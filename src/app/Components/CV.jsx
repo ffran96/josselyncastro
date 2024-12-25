@@ -1,9 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import LiCV from "./LiCV";
-import Formacion from "../data/Formacion";
-import Experiencia from "../data/Experiencia";
+import Curriculum from "../data/CV";
 
 export default function CV() {
+  const { Experiencia, Formacion } = Curriculum;
   return (
     <section className="relative overflow-hidden">
       <div id="cv" className="lg:max-w-7xl mx-auto px-3 lg:px-0 ">
@@ -12,10 +13,12 @@ export default function CV() {
           <div className="">
             <img
               src="/destello-josselyn.webp"
+              alt="Destello Josslyn Castro"
               className="absolute  blur-[96px] -z-10 rounded-full -right-[20%]  w-[1500px] 72 h-[2000px] "
             />
             <img
               src="/destello-josselyn.webp"
+              alt="Destello Josslyn Castro"
               className="absolute  blur-[288px] -z-20 rounded-full -right-[20%]  w-[3000px] 72 h-[4000px] "
             />
 
