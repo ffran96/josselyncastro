@@ -54,18 +54,18 @@ export default function CV() {
           </div>
           <div className="flex flex-col gap-8">
             <div>
-              <h3 className="text-2xl font-semibold mb-6">Idiomas</h3>
-              <ul className="[&>li]:mb-3 [&>li]:max-w-96">
-                {Idiomas.map((idioma) => (
-                  <IdiomasComp key={idioma} Idioma={idioma} />
-                ))}
-              </ul>
-            </div>
-            <div>
               <h3 className="text-2xl font-semibold mb-6">Habilidades</h3>
               <ul className="[&>li]:mb-3 [&>li]:max-w-96">
                 {Habilidades.map((habilidad) => (
                   <HabilidadesComp key={habilidad} Habilidad={habilidad} />
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-2xl font-semibold mb-6">Idiomas</h3>
+              <ul className="[&>li]:mb-3 [&>li]:max-w-96">
+                {Idiomas.map((idioma) => (
+                  <IdiomasComp key={idioma} Idioma={idioma} />
                 ))}
               </ul>
             </div>
