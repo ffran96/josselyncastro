@@ -148,6 +148,9 @@ const Formacion = [
   },
 ];
 
-const Curriculum = { Experiencia, Formacion };
+const Idiomas = ["Español", "Inglés", "Valenciano"];
+const Habilidades = ["Deportes", "Danza contemporánea"];
+
+const Curriculum = { Experiencia, Formacion, Idiomas, Habilidades };
 
 export default Curriculum;
