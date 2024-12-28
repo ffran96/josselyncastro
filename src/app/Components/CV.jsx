@@ -4,6 +4,8 @@ import LiCV from "./LiCV";
 import Curriculum from "../data/CV";
 import IdiomasComp from "./IdiomasComp";
 import HabilidadesComp from "./HabilidadesComp";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function CV() {
   const { Experiencia, Formacion, Idiomas, Habilidades } = Curriculum;
@@ -11,7 +13,12 @@ export default function CV() {
   return (
     <section className="relative overflow-hidden">
       <div id="cv" className="lg:max-w-7xl mx-auto mx- px-3 lg:px-0">
-        <h2 className="pt-32 mb-8 text-3xl font-semibold ">Curriculum</h2>
+        <h2 className="pt-32 mb-8 text-3xl font-semibold ">
+          Curriculum
+          <a href="./CV.pdf " target="_blank" className="xl:cursor-pointer ml-3">
+            <FontAwesomeIcon icon={faFileArrowDown} />
+          </a>
+        </h2>
         <div className="flex justify-around flex-col gap-10 overflow-hidden lg:flex-row ">
           <div className="">
             <img
