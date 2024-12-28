@@ -41,7 +41,7 @@ export default function NewGallery() {
         <CarouselContent id={galleryID} className="">
           {GalleryImages.map(
             ({ largeURL, width, height, thumbnailURL, altThumbnail }) => (
-              <CarouselItem key={largeURL} className="basis-auto xl:basis-1/4">
+              <CarouselItem key={largeURL} className="basis-2/3 md:basis-auto">
                 <a
                   className="group xl:hover:z-10 xl:hover:scale-105  xl:transition-all relative"
                   href={largeURL}
@@ -54,7 +54,7 @@ export default function NewGallery() {
                     src={thumbnailURL}
                     quality={100}
                     style={{
-                      width: "314px",
+                      width: "500px",
                       objectFit: "cover",
                       borderRadius: "12px",
                     }}
