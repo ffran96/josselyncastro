@@ -66,8 +66,8 @@ export default function NewGallery() {
             )
           )}
         </CarouselContent>
-        <CarouselPrevious className="hidden lg:inline-flex absolute bottom-0 left-20 size-14 hover:bg-[#5d3427] hover:border-[#5d3427] hover:text-gray-50" />
-        <CarouselNext className="hidden lg:inline-flex absolute bottom-0 right-20 size-14 hover:bg-[#5d3427] hover:border-[#5d3427] hover:text-gray-50" />
+        <CarouselPrevious className="hidden lg:inline-flex absolute bottom-0 left-20 size-14 hover:bg-[#5d3427] hover:border-[#ffffff13] hover:text-[#ffffffe7] transition-colors ease-in-out duration-300" />
+        <CarouselNext className="hidden lg:inline-flex absolute bottom-0 right-20 size-14 hover:bg-[#5d3427] hover:border-[#ffffff13] hover:text-[#ffffffe7] transition-colors ease-in-out duration-300" />
       </Carousel>
     </section>
   );
