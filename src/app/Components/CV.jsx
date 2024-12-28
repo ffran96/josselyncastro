@@ -15,26 +15,19 @@ export default function CV() {
       <div id="cv" className="lg:max-w-7xl mx-auto mx- px-3 lg:px-0">
         <h2 className="pt-32 mb-8 text-3xl font-semibold ">
           Curriculum
-          <a href="./CV.pdf " target="_blank" className="xl:cursor-pointer ml-3">
+          <a
+            href="./CV.pdf "
+            target="_blank"
+            className="xl:cursor-pointer ml-3"
+          >
             <FontAwesomeIcon icon={faFileArrowDown} />
           </a>
         </h2>
         <div className="flex justify-around flex-col gap-10 overflow-hidden lg:flex-row ">
           <div className="">
-            <img
-              src="/destello-josselyn.webp"
-              alt="Destello Josslyn Castro"
-              className="absolute  blur-[96px] -z-10 rounded-full -right-[20%]  w-[1500px]  h-[2000px] "
-            />
-            <img
-              src="/destello-josselyn.webp"
-              alt="Destello Josslyn Castro"
-              className="absolute  blur-[288px] -z-20 rounded-full -right-[20%]  w-[3000px]  h-[4000px] "
-            />
-
-            <h3 className="text-2xl font-semibold mb-6">Experiencia</h3>
+            <h3 className="text-2xl font-semibold mb-6">Formación</h3>
             <ul className="[&>li]:mb-3 [&>li]:max-w-80 [&>li]:rounded-2xl">
-              {Experiencia.map(({ id, Titulo, Lugar, Fecha, Info }) => (
+              {Formacion.map(({ id, Titulo, Lugar, Fecha, Info }) => (
                 <LiCV
                   key={id}
                   Titulo={Titulo}
@@ -45,10 +38,20 @@ export default function CV() {
               ))}
             </ul>
           </div>
+          <img
+            src="/destello-josselyn.webp"
+            alt="Destello Josslyn Castro"
+            className="absolute  blur-[96px] -z-10 rounded-full -right-[20%]  w-[1500px]  h-[2000px] "
+          />
+          <img
+            src="/destello-josselyn.webp"
+            alt="Destello Josslyn Castro"
+            className="absolute  blur-[288px] -z-20 rounded-full -right-[20%]  w-[3000px]  h-[4000px] "
+          />
           <div className="">
-            <h3 className="text-2xl font-semibold mb-6">Formación</h3>
+            <h3 className="text-2xl font-semibold mb-6">Experiencia</h3>
             <ul className="[&>li]:mb-3 [&>li]:max-w-80 [&>li]:rounded-2xl">
-              {Formacion.map(({ id, Titulo, Lugar, Fecha, Info }) => (
+              {Experiencia.map(({ id, Titulo, Lugar, Fecha, Info }) => (
                 <LiCV
                   key={id}
                   Titulo={Titulo}
