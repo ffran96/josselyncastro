@@ -1,11 +1,11 @@
-import Image1 from "../../../public/josselyn-castro-actriz-gallerytb-1.webp"
-import Image2 from "../../../public/josselyn-castro-actriz-gallerytb-2.webp"
-import Image3 from "../../../public/josselyn-castro-actriz-gallerytb-3.webp"
-import Image4 from "../../../public/josselyn-castro-actriz-gallerytb-4.webp"
-import Image5 from "../../../public/josselyn-castro-actriz-gallerytb-5.webp"
-import Image6 from "../../../public/josselyn-castro-actriz-gallerytb-6.webp"
-import Image7 from "../../../public/josselyn-castro-actriz-gallerytb-7.webp"
-import Image8 from "../../../public/josselyn-castro-actriz-gallerytb-8.webp"
+import Image1 from "../../../public/josselyn-castro-actriz-gallerytb-1.jpg"
+import Image2 from "../../../public/josselyn-castro-actriz-gallerytb-2.jpg"
+import Image3 from "../../../public/josselyn-castro-actriz-gallerytb-3.jpg"
+import Image4 from "../../../public/josselyn-castro-actriz-gallerytb-4.jpg"
+import Image5 from "../../../public/josselyn-castro-actriz-gallerytb-5.jpg"
+import Image6 from "../../../public/josselyn-castro-actriz-gallerytb-6.jpg"
+import Image7 from "../../../public/josselyn-castro-actriz-gallerytb-7.jpg"
+import Image8 from "../../../public/josselyn-castro-actriz-gallerytb-8.jpg"
 
 const GalleryImages = [
   {

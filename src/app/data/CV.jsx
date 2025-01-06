@@ -148,8 +148,29 @@ const Formacion = [
   },
 ];
 
-const Idiomas = ["Español", "Inglés", "Valenciano"];
-const Habilidades = ["Deportes", "Danza contemporánea"];
+const Idiomas = [
+  {
+    Titulo: "Español"
+  },
+  {
+    Titulo: "Inglés"
+  },
+  {
+    Titulo: "Valenciano"
+  },
+]
+
+const Habilidades = [
+  {
+    Titulo: "Deportes"
+  },
+  {
+    Titulo: "Danza contemporánea"
+  },
+  {
+    Titulo: "..."
+  },
+]
 
 const Curriculum = { Experiencia, Formacion, Idiomas, Habilidades };
 

@@ -9,7 +9,7 @@ export default function Footer() {
       <p className="text-lg">
         designed by{" "}
         <a href="https://webeo.es" target="_blank">
-          <span className="text-orange-900 font-semibold cursor-pointer hover:underline">
+          <span className="text-[#5d3427] font-semibold cursor-pointer hover:underline">
             webeo
           </span>
         </a>
