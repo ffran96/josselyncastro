@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Timeline({ Competencia }) {
   return (
-    <section className="bg-gray-200 flex justify-center pt-12">
+    <section className="bg-[#fffbfa] flex justify-center pt-12">
       <div className="w-80">
         <ul>
           {Competencia.map(({ Titulo, Lugar, Fecha }) => (
