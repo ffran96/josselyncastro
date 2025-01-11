@@ -1,9 +1,10 @@
 import React from "react";
+import ContentSection from "./ContentSection";
 
 export default function Contacto() {
   return (
-    <section id="contacto" className="">
+    <ContentSection SectionId={"contacto"}>
       Contacto
-    </section>
+    </ContentSection>
   );
 }

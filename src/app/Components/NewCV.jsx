@@ -14,6 +14,7 @@ import Curriculum from "../data/CV";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Card from "./Card";
+import ContentSection from "./ContentSection";
 
 export default function NewCV() {
   const { Experiencia, Formacion, Idiomas, Habilidades } = Curriculum;
@@ -32,7 +33,7 @@ export default function NewCV() {
     };
   }, []);
   return (
-    <section id={"cv"} className="lg:max-w-7xl mx-auto">
+    <ContentSection SectionId={"cv"}>
       <div className="flex gap-3 items-baseline text-3xl">
         <h2 className="mt-32 font-semibold mb-8">Curriculum</h2>
         <a href="./CV.pdf " target="_blank" className="xl:cursor-pointer">
@@ -48,35 +49,27 @@ export default function NewCV() {
         <CarouselContent id={CVID} className="">
           <CarouselItem className="basis-2/3 md:basis-auto">
             <Card Height={"h-[696px]"} Title={"Formacion"}>
-              <Timeline 
-                Width={"w-[450px]"} 
-                Competencia={Formacion} />
+              <Timeline Width={"w-[450px]"} Competencia={Formacion} />
             </Card>
           </CarouselItem>
 
           <CarouselItem className="basis-2/3 md:basis-auto">
             <Card Height={"h-[696px]"} Title={"Experiencia"}>
-              <Timeline 
-                Width={"w-[450px]"} 
-                Competencia={Experiencia} />
+              <Timeline Width={"w-[450px]"} Competencia={Experiencia} />
             </Card>
           </CarouselItem>
 
           <CarouselItem className="basis-2/3 md:basis-auto">
             <Card Height={"h-[260px]"} Title={"Idiomas"}>
-              <Timeline 
-                Width={"w-52"} 
-                Competencia={Idiomas} />
+              <Timeline Width={"w-52"} Competencia={Idiomas} />
             </Card>
             <div className="h-5" />
             <Card Height={"h-[416px]"} Title={"Habilidades"}>
-              <Timeline 
-                Width={"w-52"} 
-                Competencia={Habilidades} />
+              <Timeline Width={"w-52"} Competencia={Habilidades} />
             </Card>
           </CarouselItem>
         </CarouselContent>
       </Carousel>
-    </section>
+    </ContentSection>
   );
 }

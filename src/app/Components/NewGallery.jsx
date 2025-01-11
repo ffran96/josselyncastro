@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/carousel";
 import GalleryImages from "../data/images";
 import Image from "next/image";
+import ContentSection from "./ContentSection";
 
 export default function NewGallery() {
   const galleryID = "gallery";
@@ -28,7 +29,7 @@ export default function NewGallery() {
     };
   }, []);
   return (
-    <section id="book" className="lg:max-w-7xl mx-auto">
+    <ContentSection SectionId="book">
       <h2 className="pt-32 pb-8 text-3xl font-semibold mb-2 px-3 lg:px-0">
         Book
       </h2>
@@ -69,6 +70,6 @@ export default function NewGallery() {
         <CarouselPrevious className="hidden lg:inline-flex absolute bottom-0 left-20 size-14 hover:bg-[#5d3427] hover:border-[#ffffff13] hover:text-[#ffffffe7] transition-colors ease-in-out duration-300" />
         <CarouselNext className="hidden lg:inline-flex absolute bottom-0 right-20 size-14 hover:bg-[#5d3427] hover:border-[#ffffff13] hover:text-[#ffffffe7] transition-colors ease-in-out duration-300" />
       </Carousel>
-    </section>
+    </ContentSection>
   );
 }

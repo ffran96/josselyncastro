@@ -3,11 +3,12 @@ import React from "react";
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 import Videos from "../data/Videobook";
+import ContentSection from "./ContentSection";
 
 export default function VBook() {
   return (
     <>
-      <section id="vbook" className="lg:max-w-7xl mx-auto">
+      <ContentSection SectionId={"vbook"}>
         <h2 className=" pt-32 pb-8 text-3xl font-semibold mb-2 px-3 lg:px-0">
           VideoBook
         </h2>
@@ -22,7 +23,7 @@ export default function VBook() {
             />
           ))}
         </div>
-      </section>
+      </ContentSection>
     </>
   );
 }
