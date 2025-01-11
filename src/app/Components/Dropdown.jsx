@@ -9,7 +9,7 @@ import { useState } from "react";
 
 export default function Dropdown({ HandleClick, Enlaces, setHandleClick }) {
   const { instagram, youtube, email } = RRSS;
-  const [ShowRRSS, setShowRRSS] = useState(true);
+  const [ShowRRSS, setShowRRSS] = useState(false);
 
   return (
     <>
