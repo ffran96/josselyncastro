@@ -11,10 +11,10 @@ export default function Conoceme() {
           <h2 className="text-3xl font-semibold mb-3">Conóceme</h2>
           <p> 
             Desde muy pequeña me he sentido atraída por el arte de la
-            interpretación. Siguiendo mi vocación me formé en la <Bold>Escuela
-            Superior de Arte Dramático de Valencia,</Bold> estudios que he
+            interpretación. Siguiendo mi vocación me formé en la <Underline>Escuela
+            Superior de Arte Dramático de Valencia,</Underline> estudios que he
             enriquecido con un entrenamiento actoral continuo en el centro
-            <Bold> Atelier del Drama</Bold> y con talleres especializados en lectura y
+            <Underline> Atelier del Drama</Underline> y con talleres especializados en lectura y
             análisis de textos, creación de personajes e interpretación ante la
             cámara.
           </p>
