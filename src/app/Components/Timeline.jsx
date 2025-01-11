@@ -23,9 +23,9 @@ export default function Timeline({ Competencia, Width }) {
                 </svg>
               </span>
               <div className="">
-                <p className="text-[#5d3427b7] text-sm">{Fecha}</p>
-                <p className="mt-1 text-[#5d3427] font-medium text-sm">{Titulo}</p>
-                <p className="text-[#5d3427b7] italic text-sm">{Lugar}</p>
+                <p className="text-[#5d3427b7] text-md">{Fecha}</p>
+                <p className="mt-1 text-[#5d3427] font-medium text-lg">{Titulo}</p>
+                <p className="text-[#5d3427b7] italic text-lg">{Lugar}</p>
               </div>
             </li>
           ))}
