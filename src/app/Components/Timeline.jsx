@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Timeline({ Competencia }) {
+export default function Timeline({ Competencia, Width }) {
   return (
     <section className="bg-[#fffbfa] flex justify-center pt-12">
-      <div className="w-80">
+      <div className={Width}>
         <ul>
           {Competencia.map(({ Titulo, Lugar, Fecha }) => (
             <li

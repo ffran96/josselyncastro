@@ -47,24 +47,32 @@ export default function NewCV() {
       >
         <CarouselContent id={CVID} className="">
           <CarouselItem className="basis-2/3 md:basis-auto">
-            <Card Title={"Formación"}>
-              <Timeline Competencia={Formacion} />
+            <Card Height={"h-[696px]"} Title={"Formación"}>
+              <Timeline 
+                Width={"w-[450px]"} 
+                Competencia={Formacion} />
             </Card>
           </CarouselItem>
 
           <CarouselItem className="basis-2/3 md:basis-auto">
-            <Card Title={"Experiencia"}>
-              <Timeline Competencia={Experiencia} />
+            <Card Height={"h-[696px]"} Title={"Experiencia"}>
+              <Timeline 
+                Width={"w-[450px]"} 
+                Competencia={Experiencia} />
             </Card>
           </CarouselItem>
 
           <CarouselItem className="basis-2/3 md:basis-auto">
-            <Card Title={"Idiomas"}>
-              <Timeline Competencia={Idiomas} />
+            <Card Height={"h-[260px]"} Title={"Idiomas"}>
+              <Timeline 
+                Width={"w-52"} 
+                Competencia={Idiomas} />
             </Card>
             <div className="h-5" />
-            <Card Title={"Habilidades"}>
-              <Timeline Competencia={Habilidades} />
+            <Card Height={"h-[416px]"} Title={"Habilidades"}>
+              <Timeline 
+                Width={"w-52"} 
+                Competencia={Habilidades} />
             </Card>
           </CarouselItem>
         </CarouselContent>
