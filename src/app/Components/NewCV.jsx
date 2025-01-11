@@ -55,7 +55,7 @@ export default function NewCV() {
           </CarouselItem>
 
           <CarouselItem className="basis-2/3 md:basis-auto">
-            <Card Height={"h-[696px]"} Title={"Experiencia!"}>
+            <Card Height={"h-[696px]"} Title={"Experiencia"}>
               <Timeline 
                 Width={"w-[450px]"} 
                 Competencia={Experiencia} />
