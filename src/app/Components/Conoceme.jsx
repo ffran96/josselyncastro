@@ -1,25 +1,27 @@
 import React from "react";
 import ContentSection from "./ContentSection";
+import Bold from "./Bold";
+import Underline from "./Underline";
 
 export default function Conoceme() {
   return (
     <ContentSection SectionId={"conoceme"}>
       <article className="pt-32 top-10 flex flex-col xl:flex-row place-items-center gap-14 ">
-        <div className="max-w-[600px] [&>p]:mb-4 [&>p]:leading-7 [&>p]:text-lg [&>p]:text-pretty">
+        <div className="max-w-[550px] [&>p]:mb-4 [&>p]:leading-7 [&>p]:text-lg [&>p]:text-pretty">
           <h2 className="text-3xl font-semibold mb-3">Conóceme</h2>
-          <p>
+          <p> 
             Desde muy pequeña me he sentido atraída por el arte de la
-            interpretación. Siguiendo mi vocación me formé en la Escuela
-            Superior de Arte Dramático de Valencia, estudios que he
-            enriquecidocon un entrenamiento actoral continuo en el centro
-            Atelier del Drama y con talleres especializados en lectura y
+            interpretación. Siguiendo mi vocación me formé en la <Bold>Escuela
+            Superior de Arte Dramático de Valencia,</Bold> estudios que he
+            enriquecido con un entrenamiento actoral continuo en el centro
+            <Bold> Atelier del Drama</Bold> y con talleres especializados en lectura y
             análisis de textos, creación de personajes e interpretación ante la
             cámara.
           </p>
           <p>
             Estas experiencias me han proporcionado una sólida técnica actoral
             al haber abordado personajes y textos complejos de autores como
-            Chéjov, Strindberg y Tennessee Williams. Mi trayectoria incluye
+            <Underline> Chéjov, Strindberg y Tennessee Williams.</Underline> Mi trayectoria incluye
             producciones teatrales, spots publicitarios, videoclips y pequeños
             proyectos audiovisuales.
           </p>
