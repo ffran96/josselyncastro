@@ -31,8 +31,25 @@ export default function NewCV() {
     };
   }, []);
 
-  const Basis = "md:basis-auto"
-  const TimelineWidth = "w-[375px]"
+  const [api, setApi] = React.useState();
+  const [current, setCurrent] = React.useState(0);
+  const [count, setCount] = React.useState(0);
+
+  React.useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
+
+  const Basis = "md:basis-auto";
+  const TimelineWidth = "w-[375px]";
   return (
     <ContentSection SectionId={"cv"}>
       <div className="flex gap-3 items-baseline text-3xl">
@@ -42,6 +59,7 @@ export default function NewCV() {
         </a>
       </div>
       <Carousel
+        setApi={setApi}
         opts={{
           align: "start",
         }}
@@ -71,6 +89,9 @@ export default function NewCV() {
           </CarouselItem>
         </CarouselContent>
       </Carousel>
+      <div className="py-2 text-center text-sm text-muted-foreground">
+        Competencia {current} de {count}
+      </div>
     </ContentSection>
   );
 }
