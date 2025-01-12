@@ -24,7 +24,7 @@ export const metadata = {
   ],
   openGraph: {
     images:
-      "https://www.josselyncastro.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjoss-portada.8a87a388.webp&w=3840&q=100",
+      "https://www.josselyncastro.com/joss-og.jpg",
   },
 };
 
