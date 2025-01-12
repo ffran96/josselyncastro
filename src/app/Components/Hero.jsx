@@ -2,10 +2,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faComputerMouse } from "@fortawesome/free-solid-svg-icons";
 import RRSS from "../data/RRSS";
 import Image from "next/image";
 import Wallpaper from "../../../public/joss-portada.webp";
+import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 
 export default function Hero() {
   const { instagram, youtube, email } = RRSS;
@@ -31,7 +31,7 @@ export default function Hero() {
         >
           <FontAwesomeIcon
             className="text-[20px] transition-colors delay-100"
-            icon={faComputerMouse}
+            icon={faPaperPlane}
           />
           <span>{email}</span>
         </a>
