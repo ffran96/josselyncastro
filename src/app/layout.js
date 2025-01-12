@@ -7,8 +7,8 @@ import FontAwesomeConfig from "../../fontawesome";
 const inter = Lora({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Josselyn Castro - Actriz",
-  description: "Josselyn Castro - Actriz",
+  title: "Josselyn Castro - Actriz profesional en Valencia",
+  description: "Actriz profesional en Valencia. Formación y experiencia en teatro, audiovisuales y publicidad. ¡Descubre mi trabajo!😊",
 };
 
 export default function RootLayout({ children }) {
