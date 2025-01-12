@@ -6,8 +6,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Timeline from "./Timeline";
 import Curriculum from "../data/CV";
@@ -18,6 +16,7 @@ import ContentSection from "./ContentSection";
 
 export default function NewCV() {
   const { Experiencia, Formacion, Idiomas, Habilidades } = Curriculum;
+  const Competencias = [Formacion, Experiencia];
   const CVID = "Curriculum";
   useEffect(() => {
     let lightbox = new PhotoSwipeLightbox({
@@ -32,6 +31,8 @@ export default function NewCV() {
       lightbox = null;
     };
   }, []);
+
+  const Basis = "md:basis-auto"
   return (
     <ContentSection SectionId={"cv"}>
       <div className="flex gap-3 items-baseline text-3xl">
@@ -42,31 +43,31 @@ export default function NewCV() {
       </div>
       <Carousel
         opts={{
-          align: "center",
+          align: "start",
         }}
         className="w-full"
       >
         <CarouselContent id={CVID} className="">
-          <CarouselItem className="basis-2/3 md:basis-auto">
-            <Card Height={"h-[696px]"} Title={"Formacion"}>
-              <Timeline Width={"w-[450px]"} Competencia={Formacion} />
+          <CarouselItem className={Basis}>
+            <Card Height="h-[900px]" Title="Formacion">
+              <Timeline Width="w-[350px]" Competencia={Formacion} />
+            </Card>
+          </CarouselItem>
+          <CarouselItem className={Basis}>
+            <Card Height="h-[900px]" Title="Experiencia">
+              <Timeline Width="w-[350px]" Competencia={Experiencia} />
             </Card>
           </CarouselItem>
 
-          <CarouselItem className="basis-2/3 md:basis-auto">
-            <Card Height={"h-[696px]"} Title={"Experiencia"}>
-              <Timeline Width={"w-[450px]"} Competencia={Experiencia} />
-            </Card>
-          </CarouselItem>
-
-          <CarouselItem className="basis-2/3 md:basis-auto">
-            <Card Height={"h-[260px]"} Title={"Idiomas"}>
-              <Timeline Width={"w-52"} Competencia={Idiomas} />
-            </Card>
-            <div className="h-5" />
-            <Card Height={"h-[416px]"} Title={"Habilidades"}>
-              <Timeline Width={"w-52"} Competencia={Habilidades} />
-            </Card>
+          <CarouselItem className={Basis}>
+            <div className="flex flex-col gap-4">
+              <Card Height="h-[442px]" Title="Idiomas">
+                <Timeline Width={"w-[350px]"} Competencia={Idiomas} />
+              </Card>
+              <Card Height="h-[442px]" Title="Habilidades">
+                <Timeline Width="w-[350px]" Competencia={Habilidades} />
+              </Card>
+            </div>
           </CarouselItem>
         </CarouselContent>
       </Carousel>

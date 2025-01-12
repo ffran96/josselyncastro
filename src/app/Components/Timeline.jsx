@@ -4,7 +4,7 @@ export default function Timeline({ Competencia, Width }) {
   return (
     <section className="bg-[#fffbfa] flex justify-center pt-12">
       <div className={Width}>
-        <ul>
+        <ul className="md:cursor-pointer select-none">
           {Competencia.map(({ Titulo, Lugar, Fecha }) => (
             <li
               key={Titulo}
