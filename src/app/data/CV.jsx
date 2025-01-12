@@ -156,19 +156,22 @@ const Idiomas = [
     Titulo: "Inglés"
   },
   {
-    Titulo: "Valenciano"
+    Titulo: "Valenciano/catalán"
   },
 ]
 
 const Habilidades = [
   {
-    Titulo: "Deportes"
+    Titulo: "Baloncesto, pádel y yoga entre otros."
   },
   {
-    Titulo: "Danza contemporánea"
+    Titulo: "Danza contemporánea."
   },
   {
-    Titulo: "..."
+    Titulo: "Facilidad para imitar acentos latinoamericanos."
+  },
+  {
+    Titulo: "Canto."
   },
 ]
 
