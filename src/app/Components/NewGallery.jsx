@@ -55,7 +55,7 @@ export default function NewGallery() {
                     src={thumbnailURL}
                     quality={100}
                     style={{
-                      width: "500px",
+                      width: "415px",
                       objectFit: "cover",
                       borderRadius: "12px",
                     }}

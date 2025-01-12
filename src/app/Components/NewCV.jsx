@@ -16,7 +16,6 @@ import ContentSection from "./ContentSection";
 
 export default function NewCV() {
   const { Experiencia, Formacion, Idiomas, Habilidades } = Curriculum;
-  const Competencias = [Formacion, Experiencia];
   const CVID = "Curriculum";
   useEffect(() => {
     let lightbox = new PhotoSwipeLightbox({
@@ -33,6 +32,7 @@ export default function NewCV() {
   }, []);
 
   const Basis = "md:basis-auto"
+  const TimelineWidth = "w-[375px]"
   return (
     <ContentSection SectionId={"cv"}>
       <div className="flex gap-3 items-baseline text-3xl">
@@ -50,22 +50,22 @@ export default function NewCV() {
         <CarouselContent id={CVID} className="">
           <CarouselItem className={Basis}>
             <Card Height="h-[900px]" Title="Formacion">
-              <Timeline Width="w-[350px]" Competencia={Formacion} />
+              <Timeline Width={TimelineWidth} Competencia={Formacion} />
             </Card>
           </CarouselItem>
           <CarouselItem className={Basis}>
             <Card Height="h-[900px]" Title="Experiencia">
-              <Timeline Width="w-[350px]" Competencia={Experiencia} />
+              <Timeline Width={TimelineWidth} Competencia={Experiencia} />
             </Card>
           </CarouselItem>
 
           <CarouselItem className={Basis}>
             <div className="flex flex-col gap-4">
               <Card Height="h-[442px]" Title="Idiomas">
-                <Timeline Width={"w-[350px]"} Competencia={Idiomas} />
+                <Timeline Width={TimelineWidth} Competencia={Idiomas} />
               </Card>
               <Card Height="h-[442px]" Title="Habilidades">
-                <Timeline Width="w-[350px]" Competencia={Habilidades} />
+                <Timeline Width={TimelineWidth} Competencia={Habilidades} />
               </Card>
             </div>
           </CarouselItem>
