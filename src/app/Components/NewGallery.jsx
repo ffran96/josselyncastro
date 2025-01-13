@@ -91,14 +91,14 @@ export default function NewGallery() {
       </Carousel>
       <div className="flex justify-center items-center mt-4">
         <ul className="flex gap-3 justify-center items-center bg-[#ffffffd6] rounded-xl h-5 w-44">
-          <li className={`${current==1 ? "w-3 h-3 bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
-          <li className={`${current==2 ? "w-3 h-3 bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
-          <li className={`${current==3 ? "w-3 h-3 bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
-          <li className={`${current==4 ? "w-3 h-3 bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
-          <li className={`${current==5 ? "w-3 h-3 bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
-          <li className={`${current==6 ? "w-3 h-3 bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
-          <li className={`${current==7 ? "w-3 h-3 bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
-          <li className={`${current==8 ? "w-3 h-3 bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==1 ? "w-[11px] h-[11px] bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==2 ? "w-[11px] h-[11px] bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==3 ? "w-[11px] h-[11px] bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==4 ? "w-[11px] h-[11px] bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==5 ? "w-[11px] h-[11px] bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==6 ? "w-[11px] h-[11px] bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==7 ? "w-[11px] h-[11px] bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==8 ? "w-[11px] h-[11px] bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
         </ul>
       </div>
     </ContentSection>
