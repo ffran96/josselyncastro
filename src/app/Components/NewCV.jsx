@@ -89,7 +89,7 @@ export default function NewCV() {
           </CarouselItem>
         </CarouselContent>
       </Carousel>
-      <div className="flex justify-center items-center mt-4">
+      <div className="flex justify-center items-center mt-4 md:hidden">
         <ul className="flex gap-3 justify-center items-center bg-[#ffffffd6] rounded-xl h-5 w-20">
           <li className={`${current==1 ? "w-[11px] h-[11px] bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
           <li className={`${current==2 ? "w-[11px] h-[11px] bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
