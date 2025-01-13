@@ -89,8 +89,17 @@ export default function NewGallery() {
         <CarouselPrevious className="hidden lg:inline-flex absolute bottom-0 left-20 size-14 hover:bg-[#5d3427] hover:border-[#ffffff13] hover:text-[#ffffffe7] transition-colors ease-in-out duration-300" />
         <CarouselNext className="hidden lg:inline-flex absolute bottom-0 right-20 size-14 hover:bg-[#5d3427] hover:border-[#ffffff13] hover:text-[#ffffffe7] transition-colors ease-in-out duration-300" />
       </Carousel>
-      <div className="py-2 text-center text-sm text-muted-foreground">
-        Imágen {current} de {count}
+      <div className="flex justify-center items-center mt-4">
+        <ul className="flex gap-4 justify-center items-center">
+          <li className={`${current==1 ? "w-[10px] h-[10px] bg-[#5d3427]" : "w-2 h-2 bg-[#ffffffeb]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==2 ? "w-[10px] h-[10px] bg-[#5d3427]" : "w-2 h-2 bg-[#ffffffeb]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==3 ? "w-[10px] h-[10px] bg-[#5d3427]" : "w-2 h-2 bg-[#ffffffeb]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==4 ? "w-[10px] h-[10px] bg-[#5d3427]" : "w-2 h-2 bg-[#ffffffeb]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==5 ? "w-[10px] h-[10px] bg-[#5d3427]" : "w-2 h-2 bg-[#ffffffeb]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==6 ? "w-[10px] h-[10px] bg-[#5d3427]" : "w-2 h-2 bg-[#ffffffeb]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==7 ? "w-[10px] h-[10px] bg-[#5d3427]" : "w-2 h-2 bg-[#ffffffeb]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==8 ? "w-[10px] h-[10px] bg-[#5d3427]" : "w-2 h-2 bg-[#ffffffeb]"} rounded-full transition-all ease-linear`}></li>
+        </ul>
       </div>
     </ContentSection>
   );
