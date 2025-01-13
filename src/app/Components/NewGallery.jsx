@@ -90,15 +90,15 @@ export default function NewGallery() {
         <CarouselNext className="hidden lg:inline-flex absolute bottom-0 right-20 size-14 hover:bg-[#5d3427] hover:border-[#ffffff13] hover:text-[#ffffffe7] transition-colors ease-in-out duration-300" />
       </Carousel>
       <div className="flex justify-center items-center mt-4">
-        <ul className="flex gap-4 justify-center items-center">
-          <li className={`${current==1 ? "w-[10px] h-[10px] bg-[#5d3427]" : "w-2 h-2 bg-[#ffffffeb]"} rounded-full transition-all ease-linear`}></li>
-          <li className={`${current==2 ? "w-[10px] h-[10px] bg-[#5d3427]" : "w-2 h-2 bg-[#ffffffeb]"} rounded-full transition-all ease-linear`}></li>
-          <li className={`${current==3 ? "w-[10px] h-[10px] bg-[#5d3427]" : "w-2 h-2 bg-[#ffffffeb]"} rounded-full transition-all ease-linear`}></li>
-          <li className={`${current==4 ? "w-[10px] h-[10px] bg-[#5d3427]" : "w-2 h-2 bg-[#ffffffeb]"} rounded-full transition-all ease-linear`}></li>
-          <li className={`${current==5 ? "w-[10px] h-[10px] bg-[#5d3427]" : "w-2 h-2 bg-[#ffffffeb]"} rounded-full transition-all ease-linear`}></li>
-          <li className={`${current==6 ? "w-[10px] h-[10px] bg-[#5d3427]" : "w-2 h-2 bg-[#ffffffeb]"} rounded-full transition-all ease-linear`}></li>
-          <li className={`${current==7 ? "w-[10px] h-[10px] bg-[#5d3427]" : "w-2 h-2 bg-[#ffffffeb]"} rounded-full transition-all ease-linear`}></li>
-          <li className={`${current==8 ? "w-[10px] h-[10px] bg-[#5d3427]" : "w-2 h-2 bg-[#ffffffeb]"} rounded-full transition-all ease-linear`}></li>
+        <ul className="flex gap-3 justify-center items-center bg-[#ffffffd6] rounded-xl h-5 w-44">
+          <li className={`${current==1 ? "w-3 h-3 bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==2 ? "w-3 h-3 bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==3 ? "w-3 h-3 bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==4 ? "w-3 h-3 bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==5 ? "w-3 h-3 bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==6 ? "w-3 h-3 bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==7 ? "w-3 h-3 bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==8 ? "w-3 h-3 bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
         </ul>
       </div>
     </ContentSection>

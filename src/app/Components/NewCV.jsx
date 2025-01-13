@@ -90,10 +90,10 @@ export default function NewCV() {
         </CarouselContent>
       </Carousel>
       <div className="flex justify-center items-center mt-4">
-        <ul className="flex gap-4 justify-center items-center">
-          <li className={`${current==1 ? "w-[10px] h-[10px] bg-[#5d3427]" : "w-2 h-2 bg-[#ffffffeb]"} rounded-full transition-all ease-linear`}></li>
-          <li className={`${current==2 ? "w-[10px] h-[10px] bg-[#5d3427]" : "w-2 h-2 bg-[#ffffffeb]"} rounded-full transition-all ease-linear`}></li>
-          <li className={`${current==3 ? "w-[10px] h-[10px] bg-[#5d3427]" : "w-2 h-2 bg-[#ffffffeb]"} rounded-full transition-all ease-linear`}></li>
+        <ul className="flex gap-3 justify-center items-center bg-[#ffffffd6] rounded-xl h-5 w-20">
+          <li className={`${current==1 ? "w-3 h-3 bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==2 ? "w-3 h-3 bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
+          <li className={`${current==3 ? "w-3 h-3 bg-[#231511e0]" : "w-2 h-2 bg-[#5d3427]"} rounded-full transition-all ease-linear`}></li>
         </ul>
       </div>
     </ContentSection>
