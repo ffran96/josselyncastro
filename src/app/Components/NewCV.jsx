@@ -9,12 +9,9 @@ import {
 } from "@/components/ui/carousel";
 import Timeline from "./Timeline";
 import Curriculum from "../data/CV";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Card from "./Card";
 import ContentSection from "./ContentSection";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 export default function NewCV() {
   const { Experiencia, Formacion, Idiomas, Habilidades } = Curriculum;
@@ -56,14 +53,14 @@ export default function NewCV() {
     <ContentSection SectionId={"cv"}>
       <div className="pt-32 flex flex-col  md:flex-row justify-between gap-2 items-stretch mb-8">
         <h2 className=" font-semibold  text-5xl tracking-wider">CURRICULUM</h2>
-        <Link href="./CV.pdf " target="_blank">
+        <a href="./CV.pdf " target="_blank">
           <Button
             className="bg-[#5d3427] rounded-2xl tracking-widest border-none md:hover:text-[#5d3427] md:hover:bg-[#ffffff] font-semibold"
             variant="outline"
           >
             DESCARGAR CV
           </Button>
-        </Link>
+        </a>
       </div>
       <Carousel
         setApi={setApi}
