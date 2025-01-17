@@ -14,7 +14,7 @@ export default function Home() {
       <NewCV />
       <NewGallery />
       <NewVideoBook />
-      <Contacto />
-    </main>
+{/*       <Contacto />
+ */}    </main>
   );
 }

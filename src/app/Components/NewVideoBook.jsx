@@ -8,6 +8,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 
 export default function NewVideoBook() {
@@ -56,15 +58,17 @@ export default function NewVideoBook() {
         >
           <CarouselContent id={VIDEOBOOKID} className="">
             <CarouselItem className={Basis}>
-              <Video Source="spot-mercadona.mp4" Autoplay={true} />
+              <Video Source="spot-mercadona.mp4" />
             </CarouselItem>
             <CarouselItem className={Basis}>
-              <Video Source="historia-de-un-matrimonio.mp4" Autoplay={false} />
+              <Video Source="historia-de-un-matrimonio.mp4" />
             </CarouselItem>
             <CarouselItem className={Basis}>
-              <Video Source="la-gaviota.mp4" Autoplay={false} />
+              <Video Source="la-gaviota.mp4" />
             </CarouselItem>
           </CarouselContent>
+          <CarouselPrevious className="hidden lg:inline-flex absolute bottom-0 left-20 size-14 hover:bg-[#5d3427] hover:border-[#ffffff13] hover:text-[#ffffffe7] transition-colors ease-in-out duration-300" />
+          <CarouselNext className="hidden lg:inline-flex absolute bottom-0 right-20 size-14 hover:bg-[#5d3427] hover:border-[#ffffff13] hover:text-[#ffffffe7] transition-colors ease-in-out duration-300" />
         </Carousel>
       </article>
     </ContentSection>

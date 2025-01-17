@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer
       id={"footer"}
-      className="bg-[#ffffffd2] text-black py-4 flex items-center justify-center"
+      className="bg-[#ffffffd2] text-black py-4 flex items-center justify-center mt-20"
     >
       <p className="text-lg">
         designed by{" "}
