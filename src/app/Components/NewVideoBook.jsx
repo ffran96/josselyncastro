@@ -48,7 +48,7 @@ export default function NewVideoBook() {
   const Basis = "md:basis-auto";
   return (
     <ContentSection SectionId={"video-book"}>
-      <h2 className="text-5xl pt-20 mb-5">Videobook</h2>
+      <h2 className="text-5xl pt-32 mb-5 tracking-wider	">VIDEOBOOK</h2>
       <article>
         <Carousel
           setApi={setApi}

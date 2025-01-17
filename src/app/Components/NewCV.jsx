@@ -54,8 +54,8 @@ export default function NewCV() {
   const TimelineWidth = "w-[375px]";
   return (
     <ContentSection SectionId={"cv"}>
-      <div className="flex flex-col  md:flex-row justify-between gap-3 items-stretch mt-32 mb-8">
-        <h2 className=" font-semibold  text-5xl">Curriculum</h2>
+      <div className="pt-32 flex flex-col  md:flex-row justify-between gap-3 items-stretch mt-32 mb-8">
+        <h2 className=" font-semibold  text-5xl tracking-wider">CURRICULUM</h2>
         <Link href="./CV.pdf " target="_blank">
           <Button
             className="bg-[#5d3427] rounded-2xl tracking-widest border-none md:hover:text-[#5d3427] md:hover:bg-[#ffffff] font-semibold"

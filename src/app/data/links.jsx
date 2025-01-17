@@ -1,9 +1,9 @@
 const Enlaces = [
-  { id: "0", name: "Conóceme", link: "#conoceme" },
-  { id: "1", name: "Curriculum", link: "#cv" },
-  { id: "2", name: "Book", link: "#book" },
-  { id: "3", name: "VideoBook", link: "#video-book" },
-  { id: "4", name: "Contacto", link: "#contacto" },
+  { id: "0", name: "CONÓCEME", link: "#conoceme" },
+  { id: "1", name: "CURRÍCULUM", link: "#cv" },
+  { id: "2", name: "BOOK", link: "#book" },
+  { id: "3", name: "VIDEOBOOK", link: "#video-book" },
+  { id: "4", name: "CONTACTO", link: "#contacto" },
 ];
 
 export default Enlaces;
