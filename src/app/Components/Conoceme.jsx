@@ -8,7 +8,7 @@ export default function Conoceme() {
     <ContentSection SectionId={"conoceme"}>
       <article className="pt-32 top-10 flex flex-col xl:flex-row place-items-center gap-14 ">
         <div className="max-w-[550px] [&>p]:mb-4 [&>p]:leading-7 [&>p]:text-lg [&>p]:text-pretty">
-          <h2 className="text-3xl font-semibold mb-3">Conóceme</h2>
+          <h2 className="text-5xl font-semibold mb-3">Conóceme</h2>
           <p> 
             Desde muy pequeña me he sentido atraída por el arte de la
             interpretación. Siguiendo mi vocación me formé en la <Underline>Escuela

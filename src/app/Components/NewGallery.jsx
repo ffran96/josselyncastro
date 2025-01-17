@@ -48,7 +48,7 @@ export default function NewGallery() {
 
   return (
     <ContentSection SectionId="book">
-      <h2 className="pt-32 pb-8 text-3xl font-semibold mb-2 px-3 lg:px-0">
+      <h2 className="pt-32 pb-8 text-5xl font-semibold mb-2 px-3 lg:px-0">
         Book
       </h2>
       <Carousel

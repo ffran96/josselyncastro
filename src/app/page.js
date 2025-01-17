@@ -3,6 +3,7 @@ import Contacto from "./Components/Contacto";
 import Hero from "./Components/Hero";
 import NewCV from "./Components/NewCV";
 import NewGallery from "./Components/NewGallery";
+import NewVideoBook from "./Components/NewVideoBook";
 import VBook from "./Components/VBook";
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
       <Conoceme />
       <NewCV />
       <NewGallery />
-      <VBook />
+      <NewVideoBook />
       <Contacto />
     </main>
   );

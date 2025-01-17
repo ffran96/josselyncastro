@@ -13,6 +13,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Card from "./Card";
 import ContentSection from "./ContentSection";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function NewCV() {
   const { Experiencia, Formacion, Idiomas, Habilidades } = Curriculum;
@@ -52,11 +54,16 @@ export default function NewCV() {
   const TimelineWidth = "w-[375px]";
   return (
     <ContentSection SectionId={"cv"}>
-      <div className="flex gap-3 items-baseline text-3xl">
-        <h2 className="mt-32 font-semibold mb-8">Curriculum</h2>
-        <a href="./CV.pdf " target="_blank" className="xl:cursor-pointer">
-          <FontAwesomeIcon icon={faFileArrowDown} />
-        </a>
+      <div className="flex flex-col  md:flex-row justify-between gap-3 items-stretch mt-32 mb-8">
+        <h2 className=" font-semibold  text-5xl">Curriculum</h2>
+        <Link href="./CV.pdf " target="_blank">
+          <Button
+            className="bg-[#5d3427] rounded-2xl tracking-widest border-none md:hover:text-[#5d3427] md:hover:bg-[#ffffff] font-semibold"
+            variant="outline"
+          >
+            DESCARGAR CV
+          </Button>
+        </Link>
       </div>
       <Carousel
         setApi={setApi}
@@ -91,9 +98,27 @@ export default function NewCV() {
       </Carousel>
       <div className="flex justify-center items-center mt-4 md:hidden">
         <ul className="flex gap-3 justify-center items-center bg-[#ffffffd6] rounded-xl h-5 w-20">
-          <li className={`${current==1 ? "w-[11px] h-[11px] bg-[#5d3427]" : "w-2 h-2 bg-[#5d3427f6]"} rounded-full transition-all ease-linear`}></li>
-          <li className={`${current==2 ? "w-[11px] h-[11px] bg-[#5d3427]" : "w-2 h-2 bg-[#5d3427f6]"} rounded-full transition-all ease-linear`}></li>
-          <li className={`${current==3 ? "w-[11px] h-[11px] bg-[#5d3427]" : "w-2 h-2 bg-[#5d3427f6]"} rounded-full transition-all ease-linear`}></li>
+          <li
+            className={`${
+              current == 1
+                ? "w-[11px] h-[11px] bg-[#5d3427]"
+                : "w-2 h-2 bg-[#5d3427f6]"
+            } rounded-full transition-all ease-linear`}
+          ></li>
+          <li
+            className={`${
+              current == 2
+                ? "w-[11px] h-[11px] bg-[#5d3427]"
+                : "w-2 h-2 bg-[#5d3427f6]"
+            } rounded-full transition-all ease-linear`}
+          ></li>
+          <li
+            className={`${
+              current == 3
+                ? "w-[11px] h-[11px] bg-[#5d3427]"
+                : "w-2 h-2 bg-[#5d3427f6]"
+            } rounded-full transition-all ease-linear`}
+          ></li>
         </ul>
       </div>
     </ContentSection>
