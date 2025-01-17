@@ -9,7 +9,7 @@ const inter = Lora({ subsets: ["latin"] });
 export const metadata = {
   title: "Josselyn Castro - Actriz profesional en Valencia",
   description:
-    "Actriz profesional en Valencia. Formación y experiencia en teatro, audiovisuales y publicidad. ¡Descubre mi trabajo!😊",
+    "Actriz profesional en Valencia. Formación y experiencia en teatro, audiovisuales y publicidad. ¡Descubre mi trabajo!",
   keywords: [
     "Actriz en Valencia",
     "Actriz profesional",

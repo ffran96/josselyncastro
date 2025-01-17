@@ -1,10 +1,9 @@
-import Conoceme from "./Components/Conoceme";
-import Contacto from "./Components/Contacto";
 import Hero from "./Components/Hero";
+import Conoceme from "./Components/Conoceme";
 import NewCV from "./Components/NewCV";
 import NewGallery from "./Components/NewGallery";
 import NewVideoBook from "./Components/NewVideoBook";
-import VBook from "./Components/VBook";
+import Contacto from "./Components/Contacto";
 
 export default function Home() {
   return (
