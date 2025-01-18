@@ -12,6 +12,7 @@ import Curriculum from "../data/CV";
 import Card from "./Card";
 import ContentSection from "./ContentSection";
 import { Button } from "@/components/ui/button";
+import CarouselSelector from "./CarouselSelector";
 
 export default function NewCV() {
   const { Experiencia, Formacion, Idiomas, Habilidades } = Curriculum;
@@ -51,15 +52,14 @@ export default function NewCV() {
   const TimelineWidth = "w-[375px]";
   return (
     <ContentSection SectionId={"cv"}>
-      <div className="pt-32 flex flex-col  md:flex-row justify-between gap-2 items-stretch mb-8">
+      <div className="pt-32 flex flex-col  md:flex-row justify-between gap-2 mb-8">
         <h2 className=" font-semibold  text-5xl tracking-wider">CURRICULUM</h2>
-        <a href="./CV.pdf " target="_blank">
-          <Button
-            className="bg-[#5d3427] rounded-2xl tracking-widest border-none md:hover:text-[#5d3427] md:hover:bg-[#ffffff] font-semibold"
-            variant="outline"
-          >
-            DESCARGAR CV
-          </Button>
+        <a
+          href="./CV.pdf "
+          target="_blank"
+          className="flex items-center justify-center bg-[#5d3427] max-w-fit py-3 px-4 rounded-3xl tracking-widest font-semibold text-sm xl:hover:text-[#5d3427] xl:hover:bg-[#ffffff] xl:transition-colors xl:ease-in-out xl:duration-300"
+        >
+          DESCARGAR CV
         </a>
       </div>
       <Carousel
@@ -94,26 +94,20 @@ export default function NewCV() {
         </CarouselContent>
       </Carousel>
       <div className="flex justify-center items-center mt-4 md:hidden">
-        <ul className="flex gap-3 justify-center items-center">
+        <ul className="flex gap-2 justify-center items-center">
           <li
             className={`${
-              current == 1
-                ? "w-[10px] h-[10px] bg-[#d5d5d5bc]"
-                : "w-2 h-2 bg-[#d5d5d5]"
+              current == 1 ? "w-3 h-3 bg-[#ffffff]" : "w-2 h-2 bg-[#b8b8b8]"
             } rounded-full transition-all ease-linear`}
           ></li>
           <li
             className={`${
-              current == 2
-                ? "w-[10px] h-[10px] bg-[#d5d5d5bc]"
-                : "w-2 h-2 bg-[#d5d5d5]"
+              current == 2 ? "w-3 h-3 bg-[#ffffff]" : "w-2 h-2 bg-[#b8b8b8]"
             } rounded-full transition-all ease-linear`}
           ></li>
           <li
             className={`${
-              current == 3
-                ? "w-[10px] h-[10px] bg-[#d5d5d5bc]"
-                : "w-2 h-2 bg-[#d5d5d5]"
+              current == 3 ? "w-3 h-3 bg-[#ffffff]" : "w-2 h-2 bg-[#b8b8b8]"
             } rounded-full transition-all ease-linear`}
           ></li>
         </ul>

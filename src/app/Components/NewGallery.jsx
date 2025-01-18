@@ -12,6 +12,7 @@ import {
 import GalleryImages from "../data/images";
 import Image from "next/image";
 import ContentSection from "./ContentSection";
+import CarouselSelector from "./CarouselSelector";
 
 export default function NewGallery() {
   const galleryID = "gallery";
@@ -89,13 +90,7 @@ export default function NewGallery() {
         <CarouselPrevious className="hidden lg:inline-flex absolute bottom-0 left-20 size-14 hover:bg-[#5d3427] hover:border-[#ffffff13] hover:text-[#ffffffe7] transition-colors ease-in-out duration-300" />
         <CarouselNext className="hidden lg:inline-flex absolute bottom-0 right-20 size-14 hover:bg-[#5d3427] hover:border-[#ffffff13] hover:text-[#ffffffe7] transition-colors ease-in-out duration-300" />
       </Carousel>
-      <div className="flex justify-center items-center mt-4 md:hidden">
-      <ul className="flex gap-2 justify-center items-center">
-          {GalleryImages.map(({id}) => (
-            <li key={id} className={`${current==id ? "w-[10px] h-[10px] bg-[#d5d5d5bc]" : "w-2 h-2 bg-[#d5d5d5]"} rounded-full transition-all ease-linear`}></li>
-          ))}
-        </ul>
-      </div>
+      <CarouselSelector Array={GalleryImages} CurrentCard={current} />
     </ContentSection>
   );
 }

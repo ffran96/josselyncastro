@@ -150,30 +150,31 @@ const Formacion = [
 
 const Idiomas = [
   {
-    Titulo: "Español"
+    Titulo: "Español",
   },
   {
-    Titulo: "Inglés"
+    Titulo: "Inglés",
   },
   {
-    Titulo: "Valenciano/catalán"
+    Titulo: "Valenciano/catalán",
   },
-]
+];
 
 const Habilidades = [
   {
-    Titulo: "Baloncesto, pádel y yoga entre otros."
+    Titulo: "Baloncesto, pádel y yoga entre otros.",
   },
   {
-    Titulo: "Danza contemporánea."
+    Titulo: "Danza contemporánea.",
   },
   {
-    Titulo: "Facilidad para imitar acentos latinoamericanos."
+    Titulo: "Facilidad para imitar acentos latinoamericanos.",
   },
   {
-    Titulo: "Canto."
+    Titulo: "Canto.",
   },
-]
+];
+
 
 const Curriculum = { Experiencia, Formacion, Idiomas, Habilidades };
 
