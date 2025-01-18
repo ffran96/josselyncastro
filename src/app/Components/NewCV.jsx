@@ -11,8 +11,6 @@ import Timeline from "./Timeline";
 import Curriculum from "../data/CV";
 import Card from "./Card";
 import ContentSection from "./ContentSection";
-import { Button } from "@/components/ui/button";
-import CarouselSelector from "./CarouselSelector";
 
 export default function NewCV() {
   const { Experiencia, Formacion, Idiomas, Habilidades } = Curriculum;
