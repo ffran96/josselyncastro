@@ -10,7 +10,7 @@ export default function Video({Source}) {
       loop={true}
       controls
       muted
-      className={`w-[415px] aspect-[9/16] object-cover rounded-[12px]`}
+      className={`w-[415px] aspect-[9/16] object-cover rounded-[12px] cursor-pointer`}
     />
   );
 }
