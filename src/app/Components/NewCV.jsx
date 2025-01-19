@@ -11,6 +11,7 @@ import Timeline from "./Timeline";
 import Curriculum from "../data/CV";
 import Card from "./Card";
 import ContentSection from "./ContentSection";
+import Button from "./Button";
 
 export default function NewCV() {
   const { Experiencia, Formacion, Idiomas, Habilidades } = Curriculum;
@@ -52,13 +53,7 @@ export default function NewCV() {
     <ContentSection SectionId={"cv"}>
       <div className="pt-32 flex flex-col  md:flex-row justify-between gap-2 mb-8">
         <h2 className=" font-semibold  text-5xl tracking-wider">CURRICULUM</h2>
-        <a
-          href="./CV.pdf "
-          target="_blank"
-          className="flex items-center justify-center bg-[#5d3427] max-w-fit py-3 px-4 rounded-3xl tracking-widest font-semibold text-sm xl:hover:text-[#5d3427] xl:hover:bg-[#ffffff] xl:transition-colors xl:ease-in-out xl:duration-300"
-        >
-          DESCARGAR CV
-        </a>
+        <Button Label="Descargar CV" Link="./CV.pdf" BgColor="#5d3427" />
       </div>
       <Carousel
         setApi={setApi}
