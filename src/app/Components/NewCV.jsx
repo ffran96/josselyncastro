@@ -53,7 +53,7 @@ export default function NewCV() {
     <ContentSection SectionId={"cv"}>
       <div className="pt-32 flex flex-col  md:flex-row justify-between gap-2 mb-8">
         <h2 className=" font-semibold  text-5xl tracking-wider">CURRICULUM</h2>
-        <Button Label="Descargar CV" Link="./CV.pdf" BgColor="#5d3427" />
+        <Button Label="Descargar CV" Link="./CV.pdf"/>
       </div>
       <Carousel
         setApi={setApi}
