@@ -18,9 +18,11 @@ import CarouselSelector from "./CarouselSelector";
 export default function NewCV() {
   const { Experiencia, Formacion, Competencia } = Curriculum;
   const { Idiomas, Habilidades } = Competencia;
-  const CVArrayMap = [Formacion, Experiencia ];
+  const CVArrayMap = [Formacion, Experiencia];
   const CVArraySelector = [Experiencia, Formacion, Competencia];
-
+  const Basis = "md:basis-auto";
+  const TimelineWidth = "w-[375px]";
+  
   const CVID = "Curriculum";
   useEffect(() => {
     let lightbox = new PhotoSwipeLightbox({
@@ -44,17 +46,14 @@ export default function NewCV() {
     if (!api) {
       return;
     }
-
     setCount(api.scrollSnapList().length);
     setCurrent(api.selectedScrollSnap() + 1);
-
     api.on("select", () => {
       setCurrent(api.selectedScrollSnap() + 1);
     });
   }, [api]);
 
-  const Basis = "md:basis-auto";
-  const TimelineWidth = "w-[375px]";
+
   return (
     <ContentSection SectionId={"cv"}>
       <div className="pt-32 flex flex-col  md:flex-row justify-between gap-2 mb-8">
@@ -69,7 +68,7 @@ export default function NewCV() {
         className="w-full"
       >
         <CarouselContent id={CVID}>
-          {CVArrayMap.map(({id, Competencia, Data}) => (
+          {CVArrayMap.map(({ id, Competencia, Data }) => (
             <CarouselItem key={id} className={Basis}>
               <Card Height="h-[900px]" Title={Competencia}>
                 <Timeline Width={TimelineWidth} Competencia={Data} />
