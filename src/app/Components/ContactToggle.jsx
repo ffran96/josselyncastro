@@ -1,10 +1,10 @@
-'use client'
+"use client";
 import { faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faAngleLeft, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
-export default function ContactToggle({instagram, youtube, email}) {
+export default function ContactToggle({ instagram, youtube, email }) {
   const [ShowRRSS, setShowRRSS] = useState(false);
 
   return (
@@ -22,7 +22,7 @@ export default function ContactToggle({instagram, youtube, email}) {
       <a href={"https://www.youtube.com/" + youtube} target="_blank">
         <FontAwesomeIcon className="text-white text-3xl" icon={faYoutube} />
       </a>
-      <a onClick={() => window.open(`mailto:${email}`)}>
+      <a href={`mailto:${email}`}>
         <FontAwesomeIcon className="text-white text-3xl" icon={faEnvelope} />
       </a>
       <div
