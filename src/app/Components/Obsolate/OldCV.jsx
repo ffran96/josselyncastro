@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import LiCV from "./LiCV";
-import Curriculum from "../data/CV";
-import IdiomasComp from "./IdiomasComp";
-import HabilidadesComp from "./HabilidadesComp";
+import LiCV from "./OldLiCV";
+import Curriculum from "../../data/CV";
+import IdiomasComp from "./OldIdiomasComp";
+import HabilidadesComp from "./OldHabilidadesComp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 
