@@ -12,9 +12,15 @@ import Curriculum from "../data/CV";
 import Card from "./Card";
 import ContentSection from "./ContentSection";
 import Button from "./Button";
+import MultiCard from "./MultiCard";
+import CarouselSelector from "./CarouselSelector";
 
 export default function NewCV() {
-  const { Experiencia, Formacion, Idiomas, Habilidades } = Curriculum;
+  const { Experiencia, Formacion, Competencia } = Curriculum;
+  const { Idiomas, Habilidades } = Competencia;
+  const CVArrayMap = [Formacion, Experiencia ];
+  const CVArraySelector = [Experiencia, Formacion, Competencia];
+
   const CVID = "Curriculum";
   useEffect(() => {
     let lightbox = new PhotoSwipeLightbox({
@@ -53,7 +59,7 @@ export default function NewCV() {
     <ContentSection SectionId={"cv"}>
       <div className="pt-32 flex flex-col  md:flex-row justify-between gap-2 mb-8">
         <h2 className=" font-semibold  text-5xl tracking-wider">CURRICULUM</h2>
-        <Button Label="Descargar CV" Link="./CV.pdf"/>
+        <Button Label="Descargar CV" Link="./CV.pdf" />
       </div>
       <Carousel
         setApi={setApi}
@@ -62,49 +68,20 @@ export default function NewCV() {
         }}
         className="w-full"
       >
-        <CarouselContent id={CVID} className="">
-          <CarouselItem className={Basis}>
-            <Card Height="h-[900px]" Title="Formacion">
-              <Timeline Width={TimelineWidth} Competencia={Formacion} />
-            </Card>
-          </CarouselItem>
-          <CarouselItem className={Basis}>
-            <Card Height="h-[900px]" Title="Experiencia">
-              <Timeline Width={TimelineWidth} Competencia={Experiencia} />
-            </Card>
-          </CarouselItem>
-
-          <CarouselItem className={Basis}>
-            <div className="flex flex-col gap-4">
-              <Card Height="h-[442px]" Title="Idiomas">
-                <Timeline Width={TimelineWidth} Competencia={Idiomas} />
+        <CarouselContent id={CVID}>
+          {CVArrayMap.map(({id, Competencia, Data}) => (
+            <CarouselItem key={id} className={Basis}>
+              <Card Height="h-[900px]" Title={Competencia}>
+                <Timeline Width={TimelineWidth} Competencia={Data} />
               </Card>
-              <Card Height="h-[442px]" Title="Habilidades">
-                <Timeline Width={TimelineWidth} Competencia={Habilidades} />
-              </Card>
-            </div>
+            </CarouselItem>
+          ))}
+          <CarouselItem key={Competencia.id} className={Basis}>
+            <MultiCard Idiomas={Idiomas.Data} Habilidades={Habilidades.Data} />
           </CarouselItem>
         </CarouselContent>
       </Carousel>
-      <div className="flex justify-center items-center mt-4 md:hidden">
-        <ul className="flex gap-2 justify-center items-center">
-          <li
-            className={`${
-              current == 1 ? "w-3 h-3 bg-[#ffffff]" : "w-2 h-2 bg-[#b8b8b8]"
-            } rounded-full transition-all ease-linear`}
-          ></li>
-          <li
-            className={`${
-              current == 2 ? "w-3 h-3 bg-[#ffffff]" : "w-2 h-2 bg-[#b8b8b8]"
-            } rounded-full transition-all ease-linear`}
-          ></li>
-          <li
-            className={`${
-              current == 3 ? "w-3 h-3 bg-[#ffffff]" : "w-2 h-2 bg-[#b8b8b8]"
-            } rounded-full transition-all ease-linear`}
-          ></li>
-        </ul>
-      </div>
+      <CarouselSelector Array={CVArraySelector} CurrentCard={current} />
     </ContentSection>
   );
 }
