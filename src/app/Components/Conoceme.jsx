@@ -6,7 +6,7 @@ import Underline from "./Underline";
 export default function Conoceme() {
   return (
     <ContentSection SectionId={"conoceme"}>
-      <article className="pt-32 top-10 flex flex-col xl:flex-row place-items-center gap-14 ">
+      <article className="pt-20 top-10 flex flex-col xl:flex-row items-center gap-14 ">
         <div className="max-w-[550px] [&>p]:mb-4 [&>p]:leading-7 [&>p]:text-lg [&>p]:text-pretty">
           <h2 className="text-5xl font-semibold mb-3 tracking-wider">CONÓCEME</h2>
           <p> 
