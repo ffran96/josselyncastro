@@ -59,9 +59,9 @@ export default function NewVideoBook() {
           }}
         >
           <CarouselContent id={VIDEOBOOKID} className="">
-            {Videos.map(({ title, src }) => (
+            {Videos.map(({ title, src, thumbnail }) => (
               <CarouselItem key={title} className={Basis}>
-                <Video Source={src} />
+                <Video Source={src} PosterImage={thumbnail}/>
               </CarouselItem>
             ))}
           </CarouselContent>
