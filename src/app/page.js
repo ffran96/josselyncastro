@@ -10,9 +10,9 @@ export default function Home() {
     <main className="relative">
       <Hero wallpaper="/joss-portada.webp" alt="Josselyn Castro Garces" />
       <Conoceme />
-      <NewCV />
       <NewGallery />
       <NewVideoBook />
+      <NewCV />
 {/*       <Contacto />
  */}    </main>
   );
