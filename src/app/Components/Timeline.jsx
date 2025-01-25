@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Timeline({ Competencia, Width }) {
   return (
-    <section className="bg-[#fffbfa] flex justify-center pt-12">
+    <section className="bg-[#0a0a0a] flex justify-center pt-12">
       <div className={Width}>
         <ul className="md:cursor-pointer select-none">
           {Competencia.map(({ Titulo, Lugar, Fecha }) => (
@@ -22,10 +22,10 @@ export default function Timeline({ Competencia, Width }) {
                   <circle cx="8" cy="8" r="8" />
                 </svg>
               </span>
-              <div className="">
-                <p className="text-[#5d3427b7] text-md">{Fecha}</p>
-                <p className="mt-1 text-[#5d3427] font-medium text-lg">{Titulo}</p>
-                <p className="text-[#5d3427b7] italic text-lg">{Lugar}</p>
+              <div className="text-[#ffffff]">
+                <p className=" text-md">{Fecha}</p>
+                <p className="mt-1  font-medium text-lg">{Titulo}</p>
+                <p className=" italic text-lg">{Lugar}</p>
               </div>
             </li>
           ))}
