@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import FontAwesomeConfig from "../../fontawesome";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Lora({ subsets: ["latin"] });
 
@@ -23,8 +24,7 @@ export const metadata = {
     "Actriz española",
   ],
   openGraph: {
-    images:
-      "https://www.josselyncastro.com/joss-og.jpg",
+    images: "https://www.josselyncastro.com/joss-og.jpg",
   },
 };
 
@@ -33,6 +33,7 @@ export default function RootLayout({ children }) {
     <html className="scroll-smooth" lang="es">
       <head>
         <FontAwesomeConfig />
+        <SpeedInsights />
       </head>
       <body className={inter.className}>
         <Header />
