@@ -23,7 +23,7 @@ export default function Header() {
                 {Enlaces.map(({ id, link, name }) => (
                   <li key={id}>
                     <Link
-                      className="text-slate-100 text-2xl px-6 py-4"
+                      className="text-slate-100 text-3xl px-6 py-4"
                       href={link}
                     >
                       {name}
