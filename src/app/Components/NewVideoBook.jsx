@@ -60,8 +60,9 @@ export default function NewVideoBook() {
         >
           <CarouselContent id={VIDEOBOOKID} className="">
             {Videos.map(({ title, src, thumbnail }) => (
-              <CarouselItem key={title} className={Basis}>
+              <CarouselItem key={title} className={`${Basis} flex flex-col gap-3`}>
                 <Video Source={src} PosterImage={thumbnail}/>
+                <h3 className="text-xl text-center">{title}</h3>
               </CarouselItem>
             ))}
           </CarouselContent>
