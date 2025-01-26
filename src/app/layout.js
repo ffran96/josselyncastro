@@ -3,7 +3,6 @@ import "./globals.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import FontAwesomeConfig from "../../fontawesome";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react"
 
 const inter = Lora({ subsets: ["latin"] });
@@ -34,7 +33,6 @@ export default function RootLayout({ children }) {
     <html className="scroll-smooth" lang="es">
       <head>
         <FontAwesomeConfig />
-        <SpeedInsights />
         <Analytics/>
       </head>
       <body className={inter.className}>
