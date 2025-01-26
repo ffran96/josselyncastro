@@ -30,18 +30,16 @@ export default function NewGallery() {
     };
   }, []);
 
-  const [api, setApi] = React.useState();
-  const [current, setCurrent] = React.useState(0);
-  const [count, setCount] = React.useState(0);
+  const [api, setApi] = useState();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (!api) {
       return;
     }
-
     setCount(api.scrollSnapList().length);
     setCurrent(api.selectedScrollSnap() + 1);
-
     api.on("select", () => {
       setCurrent(api.selectedScrollSnap() + 1);
     });
