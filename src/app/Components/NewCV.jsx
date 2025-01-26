@@ -25,21 +25,6 @@ export default function NewCV() {
   const Basis = "md:basis-auto";
   const TimelineWidth = "w-[375px]";
 
-  const CVID = "Curriculum";
-  useEffect(() => {
-    let lightbox = new PhotoSwipeLightbox({
-      gallery: "#" + CVID,
-      children: "a",
-      pswpModule: () => import("photoswipe"),
-    });
-    lightbox.init();
-
-    return () => {
-      lightbox.destroy();
-      lightbox = null;
-    };
-  }, []);
-
   const [api, setApi] = useState();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
@@ -68,7 +53,7 @@ export default function NewCV() {
         }}
         className="w-full"
       >
-        <CarouselContent id={CVID}>
+        <CarouselContent>
           {CVArrayMap.map(({ id, Competencia, Data }) => (
             <CarouselItem key={id} className={Basis}>
               <Card Height="h-[900px]" Title={Competencia}>
