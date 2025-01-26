@@ -11,8 +11,8 @@ export default function Home() {
       <Hero wallpaper="/joss-portada.webp" alt="Josselyn Castro Garces" />
       <Conoceme />
       <NewGallery />
-      <NewVideoBook />
       <NewCV />
+      <NewVideoBook />
 {/*       <Contacto />
  */}    </main>
   );
