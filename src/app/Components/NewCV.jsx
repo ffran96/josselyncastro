@@ -6,6 +6,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Timeline from "./Timeline";
 import Curriculum from "../data/CV";
@@ -22,7 +24,7 @@ export default function NewCV() {
   const CVArraySelector = [Experiencia, Formacion, Competencia];
   const Basis = "md:basis-auto";
   const TimelineWidth = "w-[375px]";
-  
+
   const CVID = "Curriculum";
   useEffect(() => {
     let lightbox = new PhotoSwipeLightbox({
@@ -53,7 +55,6 @@ export default function NewCV() {
     });
   }, [api]);
 
-
   return (
     <ContentSection SectionId={"cv"}>
       <div className="pt-20 flex flex-col md:flex-row justify-between gap-2 mb-5">
@@ -79,6 +80,8 @@ export default function NewCV() {
             <MultiCard Idiomas={Idiomas.Data} Habilidades={Habilidades.Data} />
           </CarouselItem>
         </CarouselContent>
+        <CarouselPrevious className="hidden xl:inline-flex absolute bottom-0 left-5 size-14 hover:bg-[#5d3427] hover:border-[#ffffff13] hover:text-[#ffffffe7] transition-colors ease-in-out duration-300" />
+        <CarouselNext className="hidden xl:inline-flex absolute bottom-0 right-5 size-14 hover:bg-[#5d3427] hover:border-[#ffffff13] hover:text-[#ffffffe7] transition-colors ease-in-out duration-300" />
       </Carousel>
       <CarouselSelector Array={CVArraySelector} CurrentCard={current} />
     </ContentSection>
