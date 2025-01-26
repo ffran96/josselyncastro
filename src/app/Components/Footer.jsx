@@ -4,16 +4,19 @@ export default function Footer() {
   return (
     <footer
       id={"footer"}
-      className="bg-[#ffffffd2] text-black py-4 flex items-center justify-center mt-20"
+      className="bg-[#5d3427] text-[#ffffffd5] py-4 flex items-center justify-center mt-20"
     >
-      <p className="text-lg">
+      <div className="flex gap-2">
+
+      <p className="text-md italic">
         designed by{" "}
-        <a href="https://webeo.es" target="_blank">
-          <span className="text-[#5d3427] font-semibold cursor-pointer hover:underline">
-            webeo
+      </p>
+      <a href="https://webeo.es" target="_blank">
+          <span className="text-[#ffffff] not-italic font-semibold cursor-pointer hover:underline">
+            Webeo
           </span>
         </a>
-      </p>
+      </div>
     </footer>
   );
 }
