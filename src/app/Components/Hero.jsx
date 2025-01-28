@@ -27,6 +27,7 @@ export default function Hero() {
       <div className="flex flex-col items-center justify-center gap-3 absolute -bottom-2 md:bottom-2 left-[50%] transform -translate-x-2/4 -translate-y-2/4 z-10">
         <a
           href={`mailto:${email}`}
+          rel="no-referrer"
           className="group flex justify-center items-center gap-4 text-white font-thin text-lg md:text-2xl rounded-full backdrop-blur-sm px-6 py-2 cursor-pointer"
         >
           <FontAwesomeIcon
@@ -37,13 +38,21 @@ export default function Hero() {
         </a>
 
         <div className="flex gap-4">
-          <a href={"https://www.youtube.com/" + youtube} target="_blank">
+          <a
+            href={"https://www.youtube.com/" + youtube}
+            rel="no-referrer"
+            target="_blank"
+          >
             <FontAwesomeIcon
               className="text-white decoration-none text-4xl cursor-pointer hover:text-[#c4302b] transition-colors delay-100"
               icon={faYoutube}
             />
           </a>
-          <a href={"https://www.instagram.com/" + instagram} target="_blank">
+          <a
+            href={"https://www.instagram.com/" + instagram}
+            rel="no-referrer"
+            target="_blank"
+          >
             <FontAwesomeIcon
               className="text-white decoration-none text-4xl cursor-pointer hover:bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] rounded-lg transition-colors delay-100"
               icon={faInstagram}
