@@ -46,7 +46,7 @@ export default function NewVideoBook() {
                 className={`${Basis} flex flex-col gap-3`}
               >
                 <Video Source={src} PosterImage={thumbnail} />
-                <h3 className="max-w-[400px] text-xl text-center">{title}</h3>
+                <h3 className="max-w-[300px] m-auto text-xl text-center">{title}</h3>
               </CarouselItem>
             ))}
           </CarouselContent>
