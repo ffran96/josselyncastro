@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Underline({ children }) {
   return (
-    <b className="decoration-[#5d3427] decoration-4 font-normal underline underline-offset-4">
+    <u className="underline underline-offset-4 decoration-4 decoration-[#5d3427]">
       {children}
-    </b>
+    </u>
   );
 }
