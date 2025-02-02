@@ -31,7 +31,7 @@ export default function Hero() {
           className="group flex justify-center items-center gap-4 text-white font-thin text-lg md:text-2xl rounded-full backdrop-blur-sm px-6 py-2 cursor-pointer"
         >
           <FontAwesomeIcon
-            className="text-[20px] decoration-none transition-colors delay-100"
+            className="text-[20px] decoration-none text-inherit transition-colors delay-100"
             icon={faPaperPlane}
           />
           <span>{email}</span>
@@ -44,7 +44,7 @@ export default function Hero() {
             target="_blank"
           >
             <FontAwesomeIcon
-              className="text-white decoration-none text-4xl cursor-pointer hover:text-[#c4302b] transition-colors delay-100"
+              className="text-white decoration-none text-inherit text-4xl cursor-pointer hover:text-[#c4302b] transition-colors delay-100"
               icon={faYoutube}
             />
           </a>
