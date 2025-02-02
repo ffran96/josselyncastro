@@ -30,10 +30,7 @@ export default function Hero() {
           rel="no-referrer"
           className="group decoration-none text-inherit flex justify-center items-center gap-4 text-[#ffffff] font-thin text-lg md:text-2xl rounded-full backdrop-blur-sm px-6 py-2 cursor-pointer"
         >
-          <FontAwesomeIcon
-            className="text-[20px] transition-colors delay-100"
-            icon={faPaperPlane}
-          />
+          <FontAwesomeIcon icon={faPaperPlane} />
           <span>{email}</span>
         </a>
 
@@ -42,23 +39,17 @@ export default function Hero() {
             href={"https://www.youtube.com/" + youtube}
             rel="no-referrer"
             target="_blank"
-            className="decoration-none text-inherit text-[#ffffff]"
+            className="decoration-none text-inherit text-[#ffffff] text-4xl cursor-pointer hover:text-[#c4302b] transition-colors delay-100"
           >
-            <FontAwesomeIcon
-              className="text-4xl cursor-pointer hover:text-[#c4302b] transition-colors delay-100"
-              icon={faYoutube}
-            />
+            <FontAwesomeIcon icon={faYoutube} />
           </a>
           <a
             href={"https://www.instagram.com/" + instagram}
             rel="no-referrer"
             target="_blank"
-            className="decoration-none text-inherit text-[#ffffff] "
+            className="decoration-none text-inherit text-[#ffffff] text-4xl cursor-pointer hover:bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] rounded-lg transition-colors delay-100"
           >
-            <FontAwesomeIcon
-              className="text-4xl cursor-pointer hover:bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] rounded-lg transition-colors delay-100"
-              icon={faInstagram}
-            />
+            <FontAwesomeIcon icon={faInstagram} />
           </a>
         </div>
       </div>
