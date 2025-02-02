@@ -31,7 +31,7 @@ export default function Hero() {
           className="group decoration-none text-inherit flex justify-center items-center gap-4 text-[#ffffff] font-thin text-lg md:text-2xl rounded-full backdrop-blur-sm px-6 py-2 cursor-pointer"
         >
           <FontAwesomeIcon icon={faPaperPlane} />
-          <span>{email}</span>
+          {email}
         </a>
 
         <div className="flex gap-4">
@@ -47,7 +47,7 @@ export default function Hero() {
             href={"https://www.instagram.com/" + instagram}
             rel="no-referrer"
             target="_blank"
-            className="decoration-none text-inherit text-[#ffffff] text-4xl cursor-pointer hover:bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] rounded-lg transition-colors delay-100"
+            className="decoration-none text-inherit text-[#ffffff] text-4xl cursor-pointer hover:bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] rounded-xl px-[4px] transition-colors delay-100"
           >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
