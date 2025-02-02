@@ -8,13 +8,13 @@ export default function Timeline({ Competencia, Width }) {
           {Competencia.map(({ Titulo, Lugar, Fecha }) => (
             <li
               key={Titulo}
-              className="relative flex gap-6 item pb-5 items-baseline *:before:absolute *:before:left-[5px] *:before:h-full *:before:w-[2px] *:before:bg-[#5d3427] *:last:before:w-[0px]"
+              className="relative flex gap-6 item pb-5 items-baseline *:before:absolute *:before:left-[7px] *:before:h-full *:before:top-3 *:before:w-[2px] *:before:bg-[#5d3427] *:last:before:w-[0px]"
             >
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
+                  width="16"
+                  height="16"
                   fill="#5d3427"
                   className="bi bi-circle-fill"
                   viewBox="0 0 16 16"
@@ -24,7 +24,7 @@ export default function Timeline({ Competencia, Width }) {
               </span>
               <div className="text-[#ffffff]">
                 <p className=" text-md">{Fecha}</p>
-                <p className="mt-1  font-medium text-lg">{Titulo}</p>
+                <p className="mt-1 font-medium text-lg">{Titulo}</p>
                 <p className=" italic text-lg">{Lugar}</p>
               </div>
             </li>
