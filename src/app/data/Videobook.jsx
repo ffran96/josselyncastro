@@ -1,7 +1,7 @@
 const Videos = [
   {
     id: 1,
-    title: "Spot para Mercadona",
+    title: "Spot publicitario para Mercadona",
     src: "spot-mercadona.mp4",
     thumbnail: "poster-mercadona.webp"
 
