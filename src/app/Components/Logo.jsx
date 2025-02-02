@@ -1,10 +1,10 @@
 import React from "react";
+import Title1 from "./Title1";
 
 export default function Logo() {
   return (
     <div className="flex flex-row gap-1 text-[#ffffff]">
-      <span className="text-3xl font-extralight">Josselyn</span>
-      <span className="text-3xl font-extralight">Castro</span>
+      <Title1>Josselyn Castro</Title1>
     </div>
   );
 }
