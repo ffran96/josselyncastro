@@ -13,6 +13,7 @@ import GalleryImages from "../data/images";
 import Image from "next/image";
 import ContentSection from "./ContentSection";
 import CarouselSelector from "./CarouselSelector";
+import Title2 from "./Title2";
 
 export default function NewGallery() {
   const galleryID = "gallery";
@@ -47,9 +48,7 @@ export default function NewGallery() {
 
   return (
     <ContentSection SectionId="book">
-      <h2 className="pt-20 pb-5 text-5xl font-semibold mb-2 px-3 lg:px-0 tracking-wider	">
-        BOOK
-      </h2>
+      <Title2 Class="pt-20 mb-3">Book</Title2>
       <Carousel
         setApi={setApi}
         opts={{

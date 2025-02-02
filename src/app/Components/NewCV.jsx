@@ -16,6 +16,7 @@ import ContentSection from "./ContentSection";
 import Button from "./Button";
 import MultiCard from "./MultiCard";
 import CarouselSelector from "./CarouselSelector";
+import Title2 from "./Title2";
 
 export default function NewCV() {
   const { Experiencia, Formacion, Competencia } = Curriculum;
@@ -43,7 +44,7 @@ export default function NewCV() {
   return (
     <ContentSection SectionId={"cv"}>
       <div className="pt-20 flex flex-col md:flex-row justify-between gap-2 mb-5">
-        <h2 className=" font-semibold  text-5xl tracking-wider">CURRICULUM</h2>
+        <Title2>Currículum</Title2>
         <Button Label="Descargar CV" Link="./CV.pdf" />
       </div>
       <Carousel

@@ -12,6 +12,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import CarouselSelector from "./CarouselSelector";
+import Title2 from "./Title2";
 
 export default function NewVideoBook() {
   const [api, setApi] = useState();
@@ -31,7 +32,7 @@ export default function NewVideoBook() {
   const Basis = "md:basis-auto";
   return (
     <ContentSection SectionId="video-book">
-      <h2 className="text-5xl pt-20 mb-5 tracking-wider	">VIDEOBOOK</h2>
+      <Title2 Class="pt-20 mb-3">Videobook</Title2>
       <article>
         <Carousel
           setApi={setApi}
@@ -46,7 +47,9 @@ export default function NewVideoBook() {
                 className={`${Basis} flex flex-col gap-3`}
               >
                 <Video Source={src} PosterImage={thumbnail} />
-                <h3 className="max-w-[300px] m-auto text-xl text-center">{title}</h3>
+                <h3 className="max-w-[300px] m-auto text-xl text-center">
+                  {title}
+                </h3>
               </CarouselItem>
             ))}
           </CarouselContent>
