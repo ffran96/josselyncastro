@@ -54,7 +54,7 @@ export default function Hero() {
             target="_blank"
           >
             <FontAwesomeIcon
-              className="text-white decoration-none text-4xl cursor-pointer hover:bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] rounded-lg transition-colors delay-100"
+              className="text-white decoration-none text-inherit text-4xl cursor-pointer hover:bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] rounded-lg transition-colors delay-100"
               icon={faInstagram}
             />
           </a>
