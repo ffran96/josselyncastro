@@ -34,7 +34,7 @@ export default function Header() {
             )}
             <div className="" onClick={() => setHandleClick(!HandleClick)}>
               <FontAwesomeIcon
-                className="2xl:hidden text-3xl text-slate-100 items-center"
+                className="2xl:hidden text-3xl text-slate-100 items-center cursor-pointer"
                 icon={HandleClick ? faXmark : faBars}
               />
             </div>
