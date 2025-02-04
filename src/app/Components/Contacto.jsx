@@ -7,19 +7,14 @@ import Title2 from "./Title2";
 export default function Contacto() {
   return (
     <ContentSection SectionId={"contacto"}>
-      <Title2 Class="mb-10 pt-20"></Title2>
+      <Title2 Class="mb-10 pt-20" />
       <article className="flex flex-col xl:flex-row gap-10 justify-center items-center">
         <Image
           src={JossImage}
           alt="Joss contacto"
-          style={{
-            width: "500px",
-            height: "500px",
-            objectFit: "cover",
-            borderRadius: "12px",
-          }}
+          className="lg:size-[600px] xl:size-[500px] object-cover rounded-[12px]"
         />
-        <form className="flex flex-col gap-3 text-[#000000] w-[370px] [&>input]:rounded-[12px] [&>input]:text-xl [&>input]:h-12 [&>input]:p-4 [&>textarea]:h-52 [&>textarea]:p-4 [&>textarea]:text-xl [&>textarea]:rounded-[12px]">
+        <form className="flex flex-col gap-3 text-[#000000] w-full lg:w-[600px] xl:w-[360px] [&>input]:rounded-[12px] [&>input]:text-xl [&>input]:h-12 [&>input]:p-4 [&>textarea]:h-52 [&>textarea]:p-4 [&>textarea]:text-xl [&>textarea]:rounded-[12px]">
           <input className="placeholder-[#5d3427] text-[#5d3427]" required type="text" placeholder="Nombre *"/>
           <input className="placeholder-[#5d3427] text-[#5d3427]" required type="email" placeholder="Correo electrónico *"/>
           <input className="placeholder-[#5d3427] text-[#5d3427]" required type="tel" placeholder="Número de teléfono"/>
