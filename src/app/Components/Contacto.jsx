@@ -7,7 +7,7 @@ import Title2 from "./Title2";
 export default function Contacto() {
   return (
     <ContentSection SectionId={"contacto"}>
-      <Title2 Class="mb-10 pt-20" />
+      <Title2 Class="mb-10 pt-20">Contacto</Title2>
       <article className="flex flex-col xl:flex-row gap-10 justify-center items-center">
         <Image
           src={JossImage}
