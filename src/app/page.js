@@ -13,7 +13,7 @@ export default function Home() {
       <NewGallery />
       <NewCV />
       <NewVideoBook />
-{/*       <Contacto />
- */}    </main>
+      <Contacto />
+    </main>
   );
 }

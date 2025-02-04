@@ -43,7 +43,7 @@ export default function NewCV() {
 
   return (
     <ContentSection SectionId={"cv"}>
-      <div className="pt-20 flex flex-col md:flex-row justify-between gap-2 mb-5">
+      <div className="pt-20 flex flex-col md:flex-row justify-between gap-2 mb-3">
         <Title2>Currículum</Title2>
         <Button Label="Descargar CV" Link="./CV.pdf" />
       </div>
