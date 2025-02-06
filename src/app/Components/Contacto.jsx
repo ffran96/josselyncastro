@@ -81,7 +81,7 @@ export default function Contacto() {
           />
           <button
             type="submit"
-            className="bg-[#5d3427] rounded-[12px] text-[#ffffff] w-fit px-8 py-4 text-xl"
+            className="bg-[#5d3427] rounded-[12px] uppercase tracking-widest text-[#ffffff] xl:hover:bg-[#ffffff] xl:hover:text-[#5d3427] w-fit px-8 py-4 text-xl transition-colors ease-in-out duration-300"
           >
             Enviar
           </button>
