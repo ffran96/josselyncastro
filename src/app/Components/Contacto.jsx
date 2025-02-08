@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import ContentSection from "./ContentSection";
 import Image from "next/image";
-import JossImage from "../../../public/joss-portada.webp";
+import JossImage from "../../../public/joss-camara-polaroid.jpg";
 import Title2 from "./Title2";
 
 export default function Contacto() {
@@ -49,7 +49,7 @@ export default function Contacto() {
       <article className="flex flex-col xl:flex-row gap-10 justify-center items-center">
         <Image
           src={JossImage}
-          alt="Joss contacto"
+          alt="Joss posando con una camara polaroid."
           className="lg:size-[600px] xl:size-[500px] object-cover rounded-[12px]"
         />
         {/* Si se ha enviado el formulario, renderizar el mensaje de éxito */}
