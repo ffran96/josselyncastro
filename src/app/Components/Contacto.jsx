@@ -45,8 +45,7 @@ export default function Contacto() {
 
   return (
     <ContentSection SectionId={"contacto"}>
-      <Title2 Class="mb-5 pt-20">Contacto</Title2>
-      <article className="flex flex-col xl:flex-row gap-10 justify-center items-center">
+      <article className="mb-5 pt-20 flex flex-col xl:flex-row gap-10 justify-center items-center">
         <Image
           src={JossImage}
           alt="Joss posando con una camara polaroid."
@@ -55,7 +54,7 @@ export default function Contacto() {
         {/* Si se ha enviado el formulario, renderizar el mensaje de éxito */}
         {submitted ? (
           <div className="flex flex-col items-center justify-center text-center p-10">
-            <h3 className="text-3xl font-bold text-[#ffffff]">¡Mensaje enviado con éxito!</h3>
+            <p className="text-3xl font-bold text-[#ffffff]">¡Mensaje enviado con éxito!</p>
             <p className="mt-4 text-lg">Gracias por contactarme, pronto me comunicaré contigo.</p>
           </div>
         ) : (
