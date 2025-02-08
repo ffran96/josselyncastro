@@ -45,7 +45,7 @@ export default function Contacto() {
 
   return (
     <ContentSection SectionId={"contacto"}>
-      <article className="mb-5 pt-20 flex flex-col xl:flex-row gap-10 justify-center items-center">
+      <article className="mb-5 pt-52 flex flex-col xl:flex-row gap-10 justify-center items-center">
         <Image
           src={JossImage}
           alt="Joss posando con una camara polaroid."
