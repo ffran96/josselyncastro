@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="flex gap-2">
 
       <p className="text-md italic">
-        designeed by{" "}
+        designed by{" "}
       </p>
       <a href="https://webeo.es" target="_blank">
           <span className="text-[#ffffff] not-italic font-semibold cursor-pointer hover:underline">
