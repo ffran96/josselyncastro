@@ -3,7 +3,6 @@ import "./globals.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import FontAwesomeConfig from "../../fontawesome";
-import { Analytics } from "@vercel/analytics/react"
 
 const inter = Lora({ subsets: ["latin"] });
 const { className } = inter;
@@ -34,7 +33,6 @@ export default function RootLayout({ children }) {
     <html className="scroll-smooth" lang="es">
       <head>
         <FontAwesomeConfig />
-        <Analytics/>
       </head>
       <body className={className}>
         <Header />

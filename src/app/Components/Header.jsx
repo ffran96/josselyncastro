@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import Logo from "./Logo";
 import Dropdown from "./Dropdown";
@@ -10,6 +10,18 @@ import { useState } from "react";
 
 export default function Header() {
   const [HandleClick, setHandleClick] = useState(false);
+  // Efecto para deshabilitar/rehabilitar el scroll del body cuando el Dropdown esté visible
+  useEffect(() => {
+    if (HandleClick) {
+      document.body.style.overflow = "hidden"; // Deshabilita el scroll
+    } else {
+      document.body.style.overflow = "auto"; // Habilita el scroll
+    }
+
+    return () => {
+      document.body.style.overflow = "auto"; // Asegura que el scroll esté habilitado cuando el componente se desmonte
+    };
+  }, [HandleClick]);
   return (
     <>
       {!HandleClick && (
