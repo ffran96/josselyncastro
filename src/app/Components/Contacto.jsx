@@ -45,11 +45,11 @@ export default function Contacto() {
 
   return (
     <ContentSection SectionId={"contacto"}>
-      <article className="mb-5 pt-20 flex flex-col xl:flex-row gap-10 justify-center items-center">
+      <article className="mb-5 pt-20 flex flex-col xl:flex-row gap-4 xl:gap-10 justify-center items-center">
         <Image
           src={JossImage}
           alt="Joss posando con una camara polaroid."
-          className="lg:size-[600px] xl:size-[500px] object-cover rounded-[12px]"
+          className=" w-[600px] h-[260px] xl:w-[360px] xl:h-[460px] object-cover rounded-[12px]"
         />
         {/* Si se ha enviado el formulario, renderizar el mensaje de éxito */}
         {submitted ? (
