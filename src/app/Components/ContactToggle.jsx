@@ -35,7 +35,7 @@ export default function ContactToggle({ instagram, youtube, email }) {
       </a>
       <div
         onClick={() => setShowRRSS(!ShowRRSS)}
-        className="absolute -left-[26px] py-6 px-2 rounded-tl-2xl rounded-bl-2xl bg-[#00000099]"
+        className="cursor-pointer absolute -left-[26px] py-6 px-2 rounded-tl-2xl rounded-bl-2xl bg-[#00000099]"
       >
         <FontAwesomeIcon
           className={`${ShowRRSS && "rotate-180"} transition-all duration-300`}

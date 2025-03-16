@@ -22,7 +22,7 @@ export default function Dropdown({ HandleClick, Enlaces, setHandleClick }) {
           </ul>
           <FontAwesomeIcon
             onClick={() => setHandleClick(!HandleClick)}
-            className="absolute right-7 top-4 text-3xl text-slate-100 items-center"
+            className="absolute right-7 top-4 text-3xl text-slate-100 items-center cursor-pointer"
             icon={faXmark}
           />
           <ContactToggle
