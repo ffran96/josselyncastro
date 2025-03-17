@@ -5,11 +5,11 @@ export default function Video({Source, PosterImage}) {
     <video
       src={Source}
       type="video/mp4"
-      preload="auto"
-      buffered="true"
-      poster={PosterImage}
+      autoPlay
+      muted
+      playsInline
       loop
-      controls
+      preload="auto"
       className={`w-[415px] aspect-[9/16] object-cover rounded-[12px] cursor-pointer`}
     />
   );
