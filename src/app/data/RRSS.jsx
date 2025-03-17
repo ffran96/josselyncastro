@@ -1,6 +1,6 @@
 const RRSS = {
   instagram: "josselyncg",
-  youtube: "@josselyncastrogarces2094",
+  youtube: "@josselyncg",
   email: "contacto@josselyncastro.com",
 };
 
