@@ -104,6 +104,7 @@ export default function VideoModal({ id, title, modalIsOpen, closeModal }) {
             id={id}
             title={title}
             noCookie={true}
+            poster="maxresdefault"
             style={{
               position: "absolute",
               top: 0,
